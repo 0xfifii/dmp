@@ -163,9 +163,37 @@ nav a:not(.btn):hover{color:var(--or)}
 /* how / why */
 .dark{background:var(--navy);color:#fff}
 .grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:28px}
-.step{border-top:3px solid var(--or);padding-top:20px;display:flex;flex-direction:column;gap:10px}
-.step b{font:italic 900 46px/1 "Exo 2",sans-serif;color:var(--or)}
-.step p{color:var(--pale)}
+.journey{position:relative}
+.lane2{position:relative;height:84px;margin:0 0 10px}
+.lane2 .sea{position:absolute;left:12.5%;right:12.5%;top:44px;width:75%;height:40px;transform:translateY(-50%)}
+.pin{position:absolute;top:44px;transform:translate(-50%,-50%);width:40px;height:40px;border-radius:50%;background:var(--navy);border:3px solid var(--or);color:#fff;font:italic 900 18px "Exo 2",sans-serif;display:flex;align-items:center;justify-content:center;z-index:2}
+.sailer{position:absolute;top:0;left:12.5%;transform:translateX(-50%);z-index:3;animation:sail 14s ease-in-out infinite}
+@keyframes sail{0%,6%{left:12.5%}24%,31%{left:37.5%}49%,56%{left:62.5%}74%,94%{left:87.5%}100%{left:12.5%}}
+.boxes{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.box{position:relative;border-radius:8px;padding:26px 22px 24px;display:flex;flex-direction:column;gap:10px;overflow:hidden;
+  background-image:repeating-linear-gradient(90deg,rgba(0,0,0,.09) 0 5px,transparent 5px 18px);box-shadow:inset 0 10px 0 rgba(0,0,0,.14),inset 0 -10px 0 rgba(0,0,0,.14);transition:transform .25s}
+.box:hover{transform:translateY(-4px)}
+.box:before,.box:after{content:"";position:absolute;width:16px;height:16px;background:rgba(10,31,68,.55);border-radius:2px}
+.box:before{top:6px;left:6px}.box:after{top:6px;right:6px}
+.box.b{background-color:#0B5FFF;color:#fff}
+.box.o{background-color:#FF7A1A;color:#0A1F44}
+.box.w{background-color:#EEF2F8;color:#0A1F44}
+.box.d{background-color:#16346E;color:#fff;box-shadow:inset 0 10px 0 rgba(0,0,0,.18),inset 0 -10px 0 rgba(0,0,0,.18),inset 0 0 0 2px #3D8BFF}
+.box .code{font:700 11px Inter,sans-serif;letter-spacing:.08em;opacity:.75;margin-top:8px}
+.box .stepno{font:italic 900 15px "Exo 2",sans-serif;opacity:.9}
+.bico{width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.18)}
+.box.w .bico,.box.o .bico{background:rgba(10,31,68,.1)}
+.box h3{font-size:21px;margin-top:4px}
+.box p{font-size:15px;line-height:1.5;opacity:.92}
+@media(max-width:1000px){.boxes{grid-template-columns:repeat(2,minmax(0,1fr))}.lane2{display:none}}
+@media(max-width:600px){.boxes{grid-template-columns:minmax(0,1fr);gap:26px}
+  .box:not(:last-child) ~ .box{overflow:visible}
+  .boxes .box:not(:first-child){margin-top:0}
+  .boxes{position:relative;padding-left:26px}
+  .boxes:before{content:"";position:absolute;left:8px;top:10px;bottom:10px;border-left:2px dashed #3D8BFF}
+  .box{overflow:visible}
+  .boxes .box > .stepno:before{content:"";position:absolute;left:-26px;top:30px;width:18px;height:18px;border-radius:50%;background:var(--navy);border:3px solid var(--or);box-sizing:border-box}
+}
 .why{display:flex;gap:16px;align-items:flex-start}
 .why .ico{flex:none;width:50px;height:50px}
 .why h3{font-size:19px;margin-bottom:6px}
@@ -196,7 +224,7 @@ footer{background:var(--deep);color:#fff;padding:72px max(5vw,18px) 28px}
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
 .reveal.in{opacity:1;transform:none}
 @media(max-width:600px){.steps{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{padding-top:36px}.trackcard{top:-24px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.port *{animation:none!important}.reveal{opacity:1;transform:none;transition:none}.lane .done,.lane .boat,.btn,.svc{transition:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.sailer{animation:none}.port *{animation:none!important}.reveal{opacity:1;transform:none;transition:none}.lane .done,.lane .boat,.btn,.svc{transition:none}}
 </style>
 </head>
 <body>
@@ -378,12 +406,30 @@ footer{background:var(--deep);color:#fff;padding:72px max(5vw,18px) 28px}
 
 <section class="band dark" id="how">
 <div class="wrap">
-<div class="head reveal"><span class="kick">How it works</span><h2>From booking to delivery</h2></div>
-<div class="grid4">
-<div class="step reveal"><b>1</b><h3>Book your container</h3><p>Pick a size and tell us what you're shipping and where.</p></div>
-<div class="step reveal"><b>2</b><h3>We load it</h3><p>Your vehicles, parts or goods are collected and loaded.</p></div>
-<div class="step reveal"><b>3</b><h3>Ship and track</h3><p>The container sails. Follow it with your DMP tracking number.</p></div>
-<div class="step reveal"><b>4</b><h3>Receive your cargo</h3><p>It arrives at the destination port, ready for pickup or delivery.</p></div>
+<div class="head reveal"><span class="kick">How it works</span><h2>From booking to delivery</h2><p>Four stops on one route. You can see which one your cargo is at, any time.</p></div>
+<div class="journey reveal">
+<div class="lane2" aria-hidden="true">
+<svg class="sea" viewBox="0 0 1000 40" preserveAspectRatio="none"><path d="M0 20 Q 62 4 125 20 T 250 20 T 375 20 T 500 20 T 625 20 T 750 20 T 875 20 T 1000 20" fill="none" stroke="#3D8BFF" stroke-width="2" stroke-dasharray="8 8" vector-effect="non-scaling-stroke"/></svg>
+<span class="pin" style="left:12.5%">1</span><span class="pin" style="left:37.5%">2</span><span class="pin" style="left:62.5%">3</span><span class="pin" style="left:87.5%">4</span>
+<span class="sailer"><svg width="62" height="34" viewBox="0 0 54 30"><rect x="12" y="4" width="10" height="8" fill="#FF7A1A"/><rect x="23" y="4" width="10" height="8" fill="#0B5FFF"/><rect x="34" y="4" width="8" height="8" fill="#EEF2F8"/><path d="M2 13h50l-6 12H8z" fill="#FFFFFF"/><rect x="8" y="17" width="40" height="3" fill="#FF7A1A"/></svg></span>
+</div>
+<ol class="boxes"><li class="box b">
+<span class="code">DMPU 100001</span>
+<span class="stepno">Step 1</span>
+<span class="bico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16v12H4zM8 7V5h8v2M4 11h16"/></svg></span>
+<h3>Book your container</h3><p>Pick a size and tell us what you're shipping and where.</p></li><li class="box o">
+<span class="code">DMPU 100002</span>
+<span class="stepno">Step 2</span>
+<span class="bico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17h13V7H3zM16 10h3l2 3v4h-5"/><circle cx="7" cy="18" r="1.6"/><circle cx="18" cy="18" r="1.6"/></svg></span>
+<h3>We load it</h3><p>Your vehicles, parts or goods are collected and loaded into the container.</p></li><li class="box w">
+<span class="code">DMPU 100003</span>
+<span class="stepno">Step 3</span>
+<span class="bico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 15h20l-3 5H5zM6 15V9h5v6M11 11h6v4"/><path d="M12 4v5"/></svg></span>
+<h3>Ship and track</h3><p>The container sails. Follow it any time with your DMP tracking number.</p></li><li class="box d">
+<span class="code">DMPU 100004</span>
+<span class="stepno">Step 4</span>
+<span class="bico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10l9-6 9 6v10H3zM9 20v-6h6v6"/></svg></span>
+<h3>Receive your cargo</h3><p>It arrives at the destination port, ready for pickup or delivery.</p></li></ol>
 </div>
 </div>
 </section>
