@@ -1,0 +1,11 @@
+{
+  "name": "dmp-global-logistics",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "DMP Global Logistics Inc. - container shipping website with shipment tracking and a staff desk",
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.10.4"
+  }
+}

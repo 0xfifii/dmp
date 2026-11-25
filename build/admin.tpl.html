@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>DMP Staff Desk</title>
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,800;1,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0A1F44;--or:#FF7A1A;--blue:#0B5FFF;--mist:#F3F5F9;--line:#D5DCE7;--soft:#4A5568}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--mist);color:var(--navy);font:16px/1.55 Inter,system-ui,sans-serif}
+h1,h2,h3{font-family:"Exo 2",sans-serif;margin:0;line-height:1.1}
+header{background:var(--navy);color:#fff}
+.top{max-width:1300px;margin:0 auto;padding:10px max(4vw,16px);display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none}
+.brand svg{height:48px;width:auto}
+.brand b{font:italic 900 18px "Exo 2",sans-serif}
+main{max-width:1300px;margin:0 auto;padding:32px max(4vw,16px) 64px}
+.card{background:#fff;border-radius:16px;padding:24px;box-shadow:0 8px 30px rgba(10,31,68,.06)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 20px;border-radius:10px;border:0;font:600 15px Inter,sans-serif;cursor:pointer;text-decoration:none}
+.or{background:var(--or);color:var(--navy)}.nv{background:var(--navy);color:#fff}.gh{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.7)}
+.x{background:#fff;color:#B42318;box-shadow:inset 0 0 0 1px #E4B4AE;min-height:38px;padding:0 12px;font-size:14px}
+:focus-visible{outline:3px solid #3D8BFF;outline-offset:2px}
+label{display:block;font-size:14px;font-weight:600;margin-bottom:6px}
+input,select{width:100%;min-height:46px;padding:8px 12px;border:1px solid #B8C2D3;border-radius:10px;font:16px Inter,sans-serif;color:var(--navy);background:#fff}
+.row{display:flex;flex-wrap:wrap;gap:12px}.row>*{flex:1 1 140px}
+.ok{background:#EAF7EF;border-radius:10px;padding:12px 14px;font-size:15px}
+.warn{background:#FFF1E6;border-radius:10px;padding:12px 14px;font-size:15px}
+.note{font-size:14px;color:var(--soft)}
+.grid{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:24px;align-items:start}
+@media(max-width:960px){.grid{grid-template-columns:minmax(0,1fr)}}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:20px}
+.stat{background:#fff;border-radius:14px;padding:16px}
+.stat b{display:block;font:italic 900 32px "Exo 2",sans-serif}
+.stat span{font-size:14px;color:var(--soft)}
+@media(max-width:700px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th{text-align:left;font-size:13px;color:var(--soft);font-weight:600;padding:8px;border-bottom:2px solid var(--line);white-space:nowrap}
+td{padding:12px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+td select{min-height:40px;font-size:14px;padding:4px 8px}
+.tn{font-weight:700;white-space:nowrap}
+.copy{border:0;background:none;color:var(--blue);font:600 13px Inter,sans-serif;cursor:pointer;padding:0}
+.login{max-width:420px;margin:60px auto}
+@media(max-width:760px){
+  .stack thead{display:none}.stack tr{display:grid;padding:12px 0;border-bottom:1px solid var(--line)}
+  .stack td{display:flow-root;border:0;padding:3px 0;padding-inline-start:7em}
+  .stack td::before{content:attr(data-l);float:inline-start;width:6.5em;margin-inline-start:-7em;color:var(--soft);font-size:13px}
+}
+</style>
+</head>
+<body>
+<header><div class="top">
+<a class="brand" href="/">{{LOGO}}<b>Staff Desk</b></a>
+<div class="row" style="flex:0 0 auto"><a class="btn gh" href="/">View website</a><button class="btn gh" id="out" hidden>Log out</button></div>
+</div></header>
+
+<main>
+<form class="card login" id="login" hidden>
+<h2 style="font-size:28px;font-style:italic;margin-bottom:6px">Staff login</h2>
+<p class="note" style="margin-bottom:18px">Manage DMP shipments and tracking.</p>
+<label for="pw">Password</label>
+<input id="pw" type="password" autocomplete="current-password" required>
+<button class="btn or" style="width:100%;margin-top:14px" type="submit">Log in</button>
+<div id="l-msg" role="status" style="margin-top:12px"></div>
+</form>
+
+<div id="desk" hidden>
+<div class="stats" id="stats"></div>
+<div class="grid">
+<form class="card" id="new" style="display:flex;flex-direction:column;gap:12px">
+<h3 style="font-size:22px">New shipment</h3>
+<div><label for="n-cust">Customer name</label><input id="n-cust" required></div>
+<div><label for="n-phone">Customer phone</label><input id="n-phone" type="tel"></div>
+<div class="row">
+<div><label for="n-size">Container</label><select id="n-size"><option>20ft Standard</option><option selected>40ft Standard</option><option>40ft High Cube</option></select></div>
+<div><label for="n-cargo">Cargo</label><select id="n-cargo"><option>Vehicles</option><option>Auto parts</option><option>General goods</option><option>Machinery</option><option>Mixed</option></select></div>
+</div>
+<div class="row">
+<div><label for="n-from">From</label><input id="n-from" required placeholder="City, country"></div>
+<div><label for="n-to">To</label><input id="n-to" required placeholder="City, country"></div>
+</div>
+<div class="row">
+<div><label for="n-box">Container no.</label><input id="n-box" placeholder="Optional"></div>
+<div><label for="n-eta">ETA</label><input id="n-eta" type="date"></div>
+</div>
+<button class="btn or" type="submit">Create shipment</button>
+<div id="n-msg" role="status"></div>
+</form>
+<div class="card">
+<div class="row" style="align-items:end;margin-bottom:14px">
+<div style="flex:3 1 220px"><label for="q">Search</label><input id="q" placeholder="Tracking no., customer, city or container"></div>
+<div style="flex:1 1 160px"><label for="f">Status</label><select id="f"><option value="">All</option></select></div>
+</div>
+<div style="overflow-x:auto"><table class="stack"><thead><tr><th>Tracking no.</th><th>Customer</th><th>Route</th><th>Status</th><th>ETA</th><th></th></tr></thead><tbody id="rows"></tbody></table></div>
+<p class="note" id="empty" style="margin-top:12px"></p>
+</div>
+</div>
+</div>
+</main>
+
+<script>
+{
+const STAGES = ["Booked","Loaded at origin","Departed port","On the water","Arrived at port","Ready for pickup"];
+const $ = (s) => document.querySelector(s);
+const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const day = (d) => (d ? String(d).slice(0, 10) : "");
+const fmt = (d) => { if (!d) return "—"; const t = new Date(d); return isNaN(t) ? String(d) : t.toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" }); };
+let rows = [];
+STAGES.forEach((s, i) => $("#f").insertAdjacentHTML("beforeend", '<option value="' + i + '">' + s + '</option>'));
+
+async function api(method, body) {
+  const r = await fetch("/api/shipments", { method, headers: { "Content-Type": "application/json" }, body: body ? JSON.stringify(body) : undefined });
+  if (r.status === 401) { showLogin(); throw new Error("Please log in again."); }
+  const d = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(d.error || "Something went wrong.");
+  return d;
+}
+function showLogin() { $("#login").hidden = false; $("#desk").hidden = true; $("#out").hidden = true; $("#pw").focus(); }
+async function showDesk() { $("#login").hidden = true; $("#desk").hidden = false; $("#out").hidden = false; await load(); }
+async function load() {
+  $("#empty").textContent = "Loading shipments…";
+  try { rows = await api("GET"); draw(); } catch (e) { $("#empty").textContent = e.message; }
+}
+function draw() {
+  const q = $("#q").value.trim().toLowerCase(), f = $("#f").value;
+  const list = rows.filter((r) => (!q || [r.number, r.customer, r.origin, r.destination, r.container, r.phone].join(" ").toLowerCase().includes(q)) && (f === "" || String(r.stage) === f));
+  const count = (fn) => rows.filter(fn).length;
+  $("#stats").innerHTML = [
+    ["Total shipments", rows.length], ["Waiting to sail", count((r) => r.stage <= 1)],
+    ["At sea", count((r) => r.stage === 2 || r.stage === 3)], ["Arrived", count((r) => r.stage >= 4)]
+  ].map(([l, n]) => '<div class="stat"><b>' + n + '</b><span>' + l + '</span></div>').join("");
+  $("#rows").innerHTML = list.map((r) =>
+    '<tr><td class="tn">' + esc(r.number) + '<br><button class="copy" data-copy="' + esc(r.number) + '">Copy</button></td>' +
+    '<td>' + esc(r.customer) + (r.phone ? '<br><span class="note">' + esc(r.phone) + '</span>' : "") + '</td>' +
+    '<td>' + esc(r.origin) + ' → ' + esc(r.destination) + '<br><span class="note">' + esc([r.size, r.cargo, r.container].filter(Boolean).join(" · ")) + '</span></td>' +
+    '<td><select data-stage="' + esc(r.number) + '" aria-label="Status for ' + esc(r.number) + '">' + STAGES.map((n, i) => '<option value="' + i + '"' + (i === Number(r.stage) ? " selected" : "") + '>' + n + '</option>').join("") + '</select></td>' +
+    '<td><input type="date" data-eta="' + esc(r.number) + '" value="' + esc(day(r.eta)) + '" aria-label="ETA for ' + esc(r.number) + '" style="min-height:40px;font-size:14px;padding:4px 8px"></td>' +
+    '<td><button class="btn x" data-del="' + esc(r.number) + '">Delete</button></td></tr>').join("");
+  document.querySelectorAll("#rows td").forEach((td) => { td.dataset.l = ["Tracking no.","Customer","Route","Status","ETA",""][td.cellIndex]; });
+  $("#empty").textContent = rows.length ? (list.length ? "" : "No shipments match.") : "No shipments yet. Create the first one with the form.";
+}
+function replace(row) { const i = rows.findIndex((x) => x.number === row.number); if (i >= 0) rows[i] = row; else rows.unshift(row); draw(); }
+
+$("#login").addEventListener("submit", async (e) => {
+  e.preventDefault(); const m = $("#l-msg"); m.className = ""; m.textContent = "Checking…";
+  try {
+    const r = await fetch("/api/login", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ password: $("#pw").value }) });
+    const d = await r.json().catch(() => ({}));
+    if (!r.ok) { m.className = "warn"; m.textContent = d.error || "Login failed."; return; }
+    $("#pw").value = ""; m.textContent = ""; showDesk();
+  } catch (err) { m.className = "warn"; m.textContent = "Couldn't reach the server."; }
+});
+$("#out").addEventListener("click", async () => { await fetch("/api/login", { method: "DELETE" }).catch(() => {}); rows = []; showLogin(); });
+$("#q").addEventListener("input", draw); $("#f").addEventListener("change", draw);
+
+$("#new").addEventListener("submit", async (e) => {
+  e.preventDefault(); const m = $("#n-msg"); const v = (id) => $(id).value.trim();
+  if (!v("#n-cust") || !v("#n-from") || !v("#n-to")) { m.className = "warn"; m.textContent = "Customer, from and to are required."; return; }
+  const btn = e.target.querySelector("[type=submit]"); btn.disabled = true;
+  try {
+    const row = await api("POST", { customer: v("#n-cust"), phone: v("#n-phone"), size: $("#n-size").value, cargo: $("#n-cargo").value, origin: v("#n-from"), destination: v("#n-to"), container: v("#n-box"), eta: $("#n-eta").value });
+    replace(row); e.target.reset();
+    m.className = "ok"; m.textContent = "Created " + row.number + ". Send this tracking number to " + row.customer + ".";
+  } catch (err) { m.className = "warn"; m.textContent = err.message; }
+  btn.disabled = false;
+});
+$("#rows").addEventListener("change", async (e) => {
+  const t = e.target, num = t.dataset.stage || t.dataset.eta; if (!num) return;
+  const r = rows.find((x) => x.number === num); if (!r) return;
+  t.disabled = true;
+  try { replace(await api("PATCH", { number: num, stage: t.dataset.stage ? Number(t.value) : Number(r.stage), eta: t.dataset.eta ? t.value : null })); }
+  catch (err) { $("#empty").textContent = err.message; }
+  t.disabled = false;
+});
+$("#rows").addEventListener("click", async (e) => {
+  const c = e.target.dataset.copy;
+  if (c) { try { await navigator.clipboard.writeText(c); e.target.textContent = "Copied"; } catch (err) { e.target.textContent = c; } setTimeout(() => { e.target.textContent = "Copy"; }, 1500); return; }
+  const id = e.target.dataset.del; if (!id) return;
+  if (e.target.dataset.sure !== "1") { e.target.dataset.sure = "1"; e.target.textContent = "Tap again"; setTimeout(() => { e.target.dataset.sure = ""; e.target.textContent = "Delete"; }, 4000); return; }
+  try { await api("DELETE", { number: id }); rows = rows.filter((x) => x.number !== id); draw(); } catch (err) { $("#empty").textContent = err.message; }
+});
+
+fetch("/api/login").then((r) => r.json()).then((d) => (d.staff ? showDesk() : showLogin())).catch(showLogin);
+}
+</script>
+</body>
+</html>

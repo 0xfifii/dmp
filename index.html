@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DMP Global Logistics | Container Shipping to Nigeria</title>
+<meta name="description" content="Book a container, ship vehicles, auto parts and goods to Nigeria and other countries, and track your shipment online with DMP Global Logistics Inc.">
+<meta property="og:title" content="DMP Global Logistics | Container Shipping to Nigeria">
+<meta property="og:description" content="Container shipping, vehicle shipping, vehicle sales and auto parts. Book and track online.">
+<meta property="og:image" content="/assets/og-image.png">
+<meta name="theme-color" content="#0A1F44">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,700;0,800;1,800;1,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0A1F44;--deep:#05122B;--mid:#16346E;--or:#FF7A1A;--or2:#FF9A4D;--blue:#0B5FFF;--sky:#3D8BFF;--mist:#F3F5F9;--line:#D5DCE7;--ink:#0A1F44;--soft:#4A5568;--pale:#C9D6EE;--r:16px}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:#fff;color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif;overflow-x:clip}
+h1,h2,h3,h4{font-family:"Exo 2",sans-serif;margin:0;line-height:1.08;text-wrap:balance}
+h1{font-style:italic;font-weight:900;font-size:clamp(40px,5.8vw,70px)}
+h2{font-style:italic;font-weight:900;font-size:clamp(32px,4vw,48px)}
+h3{font-weight:800;font-size:22px}
+p{margin:0}
+a{color:var(--blue)}
+img,svg{max-width:100%}
+.wrap{max-width:1220px;margin:0 auto}
+.band{padding:clamp(64px,8vw,112px) max(5vw,18px)}
+.head{max-width:700px;display:flex;flex-direction:column;gap:14px;margin-bottom:44px}
+.head p{font-size:18px;color:var(--soft)}
+.kick{font-weight:700;font-size:14px;color:var(--blue);display:inline-flex;align-items:center;gap:10px}
+.kick:before{content:"";width:28px;height:4px;border-radius:2px;background:var(--or)}
+.dark .kick{color:var(--or2)} .dark .head p{color:var(--pale)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 26px;border-radius:10px;border:0;font:600 16px Inter,sans-serif;text-decoration:none;cursor:pointer;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.or{background:var(--or);color:var(--navy)}.btn.or:hover{background:#ff8d3a}
+.btn.nv{background:var(--navy);color:#fff}.btn.nv:hover{background:var(--mid)}
+.btn.ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.8)}.btn.ghost:hover{background:rgba(255,255,255,.08)}
+.btn.line{background:#fff;color:var(--navy);box-shadow:inset 0 0 0 2px var(--line)}
+:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+label{font-size:14px;font-weight:600;display:block;margin-bottom:6px}
+input,select{width:100%;min-height:50px;padding:10px 14px;border:1px solid #B8C2D3;border-radius:10px;font:16px Inter,sans-serif;color:var(--ink);background:#fff}
+.row{display:flex;flex-wrap:wrap;gap:12px}.row>*{flex:1 1 150px}
+.note{font-size:14px;color:var(--soft)}
+.ok{background:#EAF7EF;border-radius:10px;padding:14px 16px;font-size:15px}
+.warn{background:#FFF1E6;border-radius:10px;padding:14px 16px;font-size:15px}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(10,31,68,.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.08)}
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px max(5vw,18px);max-width:1320px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none}
+.brand svg{height:56px;width:auto}
+.brand b{font:italic 900 18px/.95 "Exo 2",sans-serif;display:block;letter-spacing:.01em}
+.brand small{font:700 11px Inter,sans-serif;color:#7FB2FF;letter-spacing:.12em}
+nav{display:flex;align-items:center;gap:26px}
+nav a{color:#fff;text-decoration:none;font-weight:500;font-size:15px}
+nav a:not(.btn):hover{color:var(--or)}
+.menu{display:none;background:none;border:0;color:#fff;width:48px;height:48px;border-radius:10px;cursor:pointer}
+@media(max-width:900px){
+  .menu{display:inline-flex;align-items:center;justify-content:center}
+  nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--navy);flex-direction:column;align-items:stretch;gap:0;padding:8px max(5vw,18px) 20px;border-bottom:1px solid rgba(255,255,255,.1)}
+  nav.open{display:flex}
+  nav a:not(.btn){padding:14px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:17px}
+  nav .btn{margin-top:14px}
+}
+
+/* hero */
+.hero{background:radial-gradient(1100px 500px at 80% -10%,#16346E 0,transparent 60%),var(--navy);color:#fff;position:relative;padding:56px max(5vw,18px) 0;overflow:hidden}
+.hero .wrap{display:flex;flex-wrap:wrap;gap:56px;align-items:center;position:relative;z-index:2}
+.copy{flex:1 1 460px;display:flex;flex-direction:column;gap:24px}
+.lead{font-size:clamp(17px,1.6vw,20px);color:var(--pale);max-width:560px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#fff;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);padding:8px 14px;border-radius:999px}
+.chip i{width:8px;height:8px;border-radius:50%;background:var(--or)}
+.card{background:#fff;color:var(--ink);border-radius:var(--r);padding:28px;box-shadow:0 30px 70px rgba(0,0,0,.3)}
+.quote{flex:1 1 380px;max-width:470px;display:flex;flex-direction:column;gap:15px}
+.quote h3{font-size:25px}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{min-height:46px;padding:0 16px;border-radius:10px;border:2px solid var(--line);background:#fff;color:var(--ink);font:600 15px Inter,sans-serif;cursor:pointer}
+.pill[aria-pressed=true]{background:var(--navy);border-color:var(--navy);color:#fff}
+.port{display:block;width:calc(100% + 2*max(5vw,18px));height:clamp(150px,19vw,270px);margin:8px calc(-1*max(5vw,18px)) 0}
+.port .ship{animation:bob 6s ease-in-out infinite}
+.port .w1{animation:wave 7s linear infinite}.port .w2{animation:wave 11s linear infinite reverse}
+.port .hook{animation:hook 5s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(3px)}}
+@keyframes wave{to{transform:translateX(120px)}}
+@keyframes hook{50%{transform:translateY(-14px)}}
+
+/* tracking */
+.trackband{background:var(--mist);padding:0 max(5vw,18px)}
+.trackcard{position:relative;top:-40px;margin-bottom:-12px;z-index:3}
+.trackform{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.trackform .t{flex:1 1 260px}
+.trackform input{flex:2 1 260px;width:auto;font-size:17px;text-transform:uppercase;letter-spacing:.04em}
+.trackform .btn{flex:0 0 auto}
+.result{margin-top:22px;display:none;border-top:1px solid var(--line);padding-top:22px}
+.route{display:flex;justify-content:space-between;gap:16px;font-weight:700;font-size:18px}
+.route span{font-size:13px;font-weight:500;color:var(--soft);display:block}
+.lane{position:relative;height:60px;margin:10px 0 16px}
+.lane .rail{position:absolute;left:0;right:0;top:32px;height:4px;background:var(--line);border-radius:2px}
+.lane .done{position:absolute;left:0;top:32px;height:4px;background:var(--or);border-radius:2px;transition:width 1s ease}
+.lane .boat{position:absolute;top:0;transform:translateX(-50%);transition:left 1s ease}
+.steps{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;font-size:13px}
+.steps div{color:var(--soft);border-top:4px solid var(--line);padding-top:8px}
+.steps div.on{color:var(--ink);font-weight:600;border-color:var(--or)}
+.events{margin:18px 0 0;padding:0;list-style:none;display:grid;gap:8px}
+.events li{display:flex;gap:14px;font-size:15px}.events time{flex:none;width:110px;color:var(--soft);white-space:nowrap}
+
+/* services */
+.svcs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.svc{border-radius:var(--r);padding:30px 26px;display:flex;flex-direction:column;gap:14px;background:var(--mist);transition:transform .2s,box-shadow .2s}
+.svc:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(10,31,68,.12)}
+.svc.main{background:var(--navy);color:#fff;grid-column:span 2;grid-row:span 2;padding:38px 34px}
+.svc.main p,.svc.main li{color:var(--pale)}
+.svc.main h3{font-size:30px;font-style:italic;font-weight:900}
+.svc p{color:#3B4658}
+.svc ul{margin:4px 0 0;padding:0;list-style:none;display:grid;gap:8px;font-size:15px}
+.svc li{display:flex;gap:10px;color:#3B4658}
+.svc li:before{content:"";flex:none;width:8px;height:8px;margin-top:8px;border-radius:2px;background:var(--or)}
+.ico{width:56px;height:56px;border-radius:14px;background:var(--navy);display:flex;align-items:center;justify-content:center}
+.svc.main .ico{background:var(--or)}
+.svc .art{margin-top:auto;display:flex;justify-content:center;padding-top:10px}
+.svc .art svg{width:min(100%,360px);height:auto}
+@media(max-width:1000px){.svcs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.svcs{grid-template-columns:minmax(0,1fr)}.svc.main{grid-column:auto;grid-row:auto}}
+
+/* finder + sizes */
+.finder{display:grid;grid-template-columns:minmax(0,360px) minmax(0,1fr);gap:24px;align-items:start}
+@media(max-width:900px){.finder{grid-template-columns:minmax(0,1fr)}}
+.ask{display:flex;flex-direction:column;gap:20px}
+.stepper{display:flex;align-items:center;gap:10px}
+.stepper button{width:50px;height:50px;border-radius:10px;border:2px solid var(--line);background:#fff;font:700 22px Inter,sans-serif;color:var(--navy);cursor:pointer}
+.stepper output{min-width:56px;text-align:center;font:italic 900 34px "Exo 2",sans-serif}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.sizes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+@media(max-width:760px){.sizes{grid-template-columns:minmax(0,1fr)}}
+.size{background:#fff;border-radius:var(--r);border:2px solid transparent;display:flex;flex-direction:column;overflow:hidden;transition:border-color .2s,box-shadow .2s}
+.size.pick{border-color:var(--or);box-shadow:0 16px 40px rgba(255,122,26,.18)}
+.size .pic{height:150px;display:flex;align-items:center;justify-content:center;background:linear-gradient(#EAF0FA,#fff);position:relative}
+.size .pic svg{height:110px;width:auto}
+.badge{position:absolute;top:12px;left:12px;background:var(--or);color:var(--navy);font-weight:700;font-size:12px;padding:5px 10px;border-radius:999px;display:none}
+.size.pick .badge{display:block}
+.size .in{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.size dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:4px 0 0;font-size:14px}
+.size dt{color:var(--soft)}.size dd{margin:0;font-weight:600;text-align:right}
+.size .btn{margin-top:auto;min-height:46px}
+.verdict{font-size:17px;background:var(--navy);color:#fff;border-radius:12px;padding:16px 18px}
+.verdict b{color:var(--or2)}
+
+/* vehicle sales */
+.cars{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}
+@media(max-width:900px){.cars{grid-template-columns:minmax(0,1fr)}}
+.carart{background:var(--navy);border-radius:24px;padding:28px;position:relative;overflow:hidden}
+.carart svg{width:100%;height:auto;display:block}
+.flow{list-style:none;margin:26px 0 30px;padding:0;display:grid;gap:18px;counter-reset:s}
+.flow li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;align-items:start;counter-increment:s}
+.flow li:before{content:counter(s);width:44px;height:44px;border-radius:12px;background:var(--or);color:var(--navy);display:flex;align-items:center;justify-content:center;font:italic 900 22px "Exo 2",sans-serif}
+.flow b{display:block;font-size:17px}
+.flow span{color:var(--soft)}
+
+/* how / why */
+.dark{background:var(--navy);color:#fff}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:28px}
+.step{border-top:3px solid var(--or);padding-top:20px;display:flex;flex-direction:column;gap:10px}
+.step b{font:italic 900 46px/1 "Exo 2",sans-serif;color:var(--or)}
+.step p{color:var(--pale)}
+.why{display:flex;gap:16px;align-items:flex-start}
+.why .ico{flex:none;width:50px;height:50px}
+.why h3{font-size:19px;margin-bottom:6px}
+.why p{color:var(--soft);font-size:15px}
+
+/* faq */
+.faq{display:grid;gap:12px;max-width:860px}
+details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:0 22px}
+summary{cursor:pointer;list-style:none;padding:20px 0;font-weight:700;font-size:17px;display:flex;justify-content:space-between;gap:16px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font:700 24px Inter,sans-serif;color:var(--or);flex:none;transition:transform .2s}
+details[open] summary:after{transform:rotate(45deg)}
+details p{padding:0 0 20px;color:var(--soft)}
+
+.cta{background:var(--or);border-radius:24px;padding:clamp(30px,5vw,56px);display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;position:relative;overflow:hidden}
+.cta h2{color:var(--navy)}
+.cta p{font-size:18px;margin-top:8px;color:var(--navy)}
+footer{background:var(--deep);color:#fff;padding:72px max(5vw,18px) 28px}
+.fcols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px}
+@media(max-width:900px){.fcols{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.fcols{grid-template-columns:minmax(0,1fr)}}
+.fcols>div{display:flex;flex-direction:column;gap:10px}
+.fcols h4{font-size:17px;margin-bottom:4px}
+.fcols a,.fcols span{color:var(--pale);text-decoration:none}
+.fcols a:hover{color:#fff}
+.legal{border-top:1px solid #1C3566;margin-top:44px;padding-top:22px;font-size:14px;color:#A9B8D4;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+.wa{position:fixed;right:18px;bottom:18px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(0,0,0,.25)}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media(max-width:600px){.steps{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{padding-top:36px}.trackcard{top:-24px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.port *{animation:none!important}.reveal{opacity:1;transform:none;transition:none}.lane .done,.lane .boat,.btn,.svc{transition:none}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="top">
+<a class="brand" href="#top" aria-label="DMP Global Logistics home"><svg width="149" height="235" viewBox="-41.6 -149.0 149.0 235.0" role="img" aria-label="DMP on stacked shipping containers"><polygon points="-41.6,24.0 52.0,78.0 52.0,29.0 -41.6,-25.0" fill="#EEF2F8" /><polygon points="93.5,54.0 52.0,78.0 52.0,29.0 93.5,5.0" fill="#C9D3E3" /><polygon points="0.0,-49.0 93.5,5.0 52.0,29.0 -41.6,-25.0" fill="#FFFFFF" /><line x1="-35.7" y1="23.0" x2="-35.7" y2="-17.2" stroke="#B3C0D6" stroke-width="2.2" stroke-linecap="butt"/><line x1="-29.9" y1="26.4" x2="-29.9" y2="-13.9" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="butt"/><line x1="-24.0" y1="29.7" x2="-24.0" y2="-10.5" stroke="#B3C0D6" stroke-width="2.2" stroke-linecap="butt"/><line x1="-18.2" y1="33.1" x2="-18.2" y2="-7.1" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="butt"/><line x1="-12.3" y1="36.5" x2="-12.3" y2="-3.7" stroke="#B3C0D6" stroke-width="2.2" stroke-linecap="butt"/><line x1="-6.5" y1="39.9" x2="-6.5" y2="-0.3" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="butt"/><line x1="-0.6" y1="43.2" x2="-0.6" y2="3.0" stroke="#B3C0D6" stroke-width="2.2" stroke-linecap="butt"/><line x1="5.2" y1="46.6" x2="5.2" y2="6.4" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="butt"/><line x1="11.0" y1="50.0" x2="11.0" y2="9.8" stroke="#B3C0D6" stroke-width="2.2" stroke-linecap="butt"/><line x1="16.9" y1="53.4" x2="16.9" y2="13.1" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="butt"/><line x1="22.7" y1="56.7" x2="22.7" y2="16.5" stroke="#B3C0D6" stroke-width="2.2" stroke-linecap="butt"/><line x1="28.6" y1="60.1" x2="28.6" y2="19.9" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="butt"/><line x1="34.4" y1="63.5" x2="34.4" y2="23.3" stroke="#B3C0D6" stroke-width="2.2" stroke-linecap="butt"/><line x1="40.3" y1="66.8" x2="40.3" y2="26.6" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="butt"/><line x1="46.1" y1="70.2" x2="46.1" y2="30.0" stroke="#B3C0D6" stroke-width="2.2" stroke-linecap="butt"/><polygon points="-41.6,-21.4 52.0,32.6 52.0,29.0 -41.6,-25.0" fill="#B3C0D6" /><polygon points="-41.6,24.0 52.0,78.0 52.0,74.4 -41.6,20.4" fill="#B3C0D6" /><line x1="72.7" y1="63.0" x2="72.7" y2="20.0" stroke="#B3C0D6" stroke-width="2.5" stroke-linecap="butt"/><line x1="84.4" y1="54.3" x2="84.4" y2="15.3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="butt"/><line x1="77.7" y1="58.1" x2="77.7" y2="19.1" stroke="#FFFFFF" stroke-width="2" stroke-linecap="butt"/><line x1="67.8" y1="63.9" x2="67.8" y2="24.9" stroke="#FFFFFF" stroke-width="2" stroke-linecap="butt"/><line x1="61.1" y1="67.7" x2="61.1" y2="28.7" stroke="#FFFFFF" stroke-width="2" stroke-linecap="butt"/><polygon points="-41.6,24.0 -37.8,26.2 -37.8,21.8 -41.6,19.6" fill="#0A1F44" /><polygon points="-41.6,-20.6 -37.8,-18.4 -37.8,-22.8 -41.6,-25.0" fill="#0A1F44" /><polygon points="48.2,75.8 52.0,78.0 52.0,73.6 48.2,71.4" fill="#0A1F44" /><polygon points="48.2,31.2 52.0,33.4 52.0,29.0 48.2,26.8" fill="#0A1F44" /><polygon points="93.5,54.0 89.7,56.2 89.7,51.8 93.5,49.6" fill="#0A1F44" /><polygon points="93.5,9.4 89.7,11.6 89.7,7.2 93.5,5.0" fill="#0A1F44" /><text transform="matrix(0.8660 0.5 0 1 5.2 26.5)" x="0" y="15.9" text-anchor="middle" font-family="Exo 2, sans-serif" font-style="italic" font-weight="900" font-size="44.1" fill="#0A1F44">P</text><polygon points="-27.7,-18.0 65.8,36.0 65.8,-13.0 -27.7,-67.0" fill="#FF7A1A" /><polygon points="107.4,12.0 65.8,36.0 65.8,-13.0 107.4,-37.0" fill="#D95F0A" /><polygon points="13.9,-91.0 107.4,-37.0 65.8,-13.0 -27.7,-67.0" fill="#FFA35C" /><line x1="-21.9" y1="-19.0" x2="-21.9" y2="-59.2" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="-16.0" y1="-15.7" x2="-16.0" y2="-55.9" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="-10.2" y1="-12.3" x2="-10.2" y2="-52.5" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="-4.3" y1="-8.9" x2="-4.3" y2="-49.1" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="1.5" y1="-5.5" x2="1.5" y2="-45.7" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="7.4" y1="-2.2" x2="7.4" y2="-42.4" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="13.2" y1="1.2" x2="13.2" y2="-39.0" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="19.1" y1="4.6" x2="19.1" y2="-35.6" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="24.9" y1="8.0" x2="24.9" y2="-32.2" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="30.7" y1="11.3" x2="30.7" y2="-28.9" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="36.6" y1="14.7" x2="36.6" y2="-25.5" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="42.4" y1="18.1" x2="42.4" y2="-22.1" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="48.3" y1="21.5" x2="48.3" y2="-18.7" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="54.1" y1="24.8" x2="54.1" y2="-15.4" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="60.0" y1="28.2" x2="60.0" y2="-12.0" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><polygon points="-27.7,-63.4 65.8,-9.4 65.8,-13.0 -27.7,-67.0" fill="#C9560A" /><polygon points="-27.7,-18.0 65.8,36.0 65.8,32.4 -27.7,-21.6" fill="#C9560A" /><line x1="86.6" y1="21.0" x2="86.6" y2="-22.0" stroke="#C9560A" stroke-width="2.5" stroke-linecap="butt"/><line x1="98.2" y1="12.3" x2="98.2" y2="-26.7" stroke="#FF9447" stroke-width="2" stroke-linecap="butt"/><line x1="91.6" y1="16.1" x2="91.6" y2="-22.9" stroke="#FF9447" stroke-width="2" stroke-linecap="butt"/><line x1="81.6" y1="21.9" x2="81.6" y2="-17.1" stroke="#FF9447" stroke-width="2" stroke-linecap="butt"/><line x1="75.0" y1="25.7" x2="75.0" y2="-13.3" stroke="#FF9447" stroke-width="2" stroke-linecap="butt"/><polygon points="-27.7,-18.0 -23.9,-15.8 -23.9,-20.2 -27.7,-22.4" fill="#0A1F44" /><polygon points="-27.7,-62.6 -23.9,-60.4 -23.9,-64.8 -27.7,-67.0" fill="#0A1F44" /><polygon points="62.0,33.8 65.8,36.0 65.8,31.6 62.0,29.4" fill="#0A1F44" /><polygon points="62.0,-10.8 65.8,-8.6 65.8,-13.0 62.0,-15.2" fill="#0A1F44" /><polygon points="107.4,12.0 103.6,14.2 103.6,9.8 107.4,7.6" fill="#0A1F44" /><polygon points="107.4,-32.6 103.6,-30.4 103.6,-34.8 107.4,-37.0" fill="#0A1F44" /><text transform="matrix(0.8660 0.5 0 1 19.1 -15.5)" x="0" y="15.9" text-anchor="middle" font-family="Exo 2, sans-serif" font-style="italic" font-weight="900" font-size="44.1" fill="#0A1F44">M</text><polygon points="-37.2,-73.5 56.3,-19.5 56.3,-68.5 -37.2,-122.5" fill="#0B5FFF" /><polygon points="97.9,-43.5 56.3,-19.5 56.3,-68.5 97.9,-92.5" fill="#0848C2" /><polygon points="4.3,-146.5 97.9,-92.5 56.3,-68.5 -37.2,-122.5" fill="#4F8DFF" /><line x1="-31.4" y1="-74.5" x2="-31.4" y2="-114.7" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="-25.5" y1="-71.1" x2="-25.5" y2="-111.4" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><line x1="-19.7" y1="-67.8" x2="-19.7" y2="-108.0" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="-13.9" y1="-64.4" x2="-13.9" y2="-104.6" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><line x1="-8.0" y1="-61.0" x2="-8.0" y2="-101.2" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="-2.2" y1="-57.6" x2="-2.2" y2="-97.9" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><line x1="3.7" y1="-54.3" x2="3.7" y2="-94.5" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="9.5" y1="-50.9" x2="9.5" y2="-91.1" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><line x1="15.4" y1="-47.5" x2="15.4" y2="-87.7" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="21.2" y1="-44.1" x2="21.2" y2="-84.4" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><line x1="27.1" y1="-40.8" x2="27.1" y2="-81.0" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="32.9" y1="-37.4" x2="32.9" y2="-77.6" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><line x1="38.8" y1="-34.0" x2="38.8" y2="-74.2" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="44.6" y1="-30.6" x2="44.6" y2="-70.9" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><line x1="50.4" y1="-27.3" x2="50.4" y2="-67.5" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><polygon points="-37.2,-118.9 56.3,-64.9 56.3,-68.5 -37.2,-122.5" fill="#0743B5" /><polygon points="-37.2,-73.5 56.3,-19.5 56.3,-23.1 -37.2,-77.1" fill="#0743B5" /><line x1="77.1" y1="-34.5" x2="77.1" y2="-77.5" stroke="#0743B5" stroke-width="2.5" stroke-linecap="butt"/><line x1="88.7" y1="-43.2" x2="88.7" y2="-82.2" stroke="#2F78FF" stroke-width="2" stroke-linecap="butt"/><line x1="82.1" y1="-39.4" x2="82.1" y2="-78.4" stroke="#2F78FF" stroke-width="2" stroke-linecap="butt"/><line x1="72.1" y1="-33.6" x2="72.1" y2="-72.6" stroke="#2F78FF" stroke-width="2" stroke-linecap="butt"/><line x1="65.4" y1="-29.8" x2="65.4" y2="-68.8" stroke="#2F78FF" stroke-width="2" stroke-linecap="butt"/><polygon points="-37.2,-73.5 -33.4,-71.3 -33.4,-75.7 -37.2,-77.9" fill="#0A1F44" /><polygon points="-37.2,-118.1 -33.4,-115.9 -33.4,-120.3 -37.2,-122.5" fill="#0A1F44" /><polygon points="52.5,-21.7 56.3,-19.5 56.3,-23.9 52.5,-26.1" fill="#0A1F44" /><polygon points="52.5,-66.3 56.3,-64.1 56.3,-68.5 52.5,-70.7" fill="#0A1F44" /><polygon points="97.9,-43.5 94.1,-41.3 94.1,-45.7 97.9,-47.9" fill="#0A1F44" /><polygon points="97.9,-88.1 94.1,-85.9 94.1,-90.3 97.9,-92.5" fill="#0A1F44" /><text transform="matrix(0.8660 0.5 0 1 9.5 -71.0)" x="0" y="15.9" text-anchor="middle" font-family="Exo 2, sans-serif" font-style="italic" font-weight="900" font-size="44.1" fill="#fff">D</text></svg><span><b>GLOBAL<br>LOGISTICS</b><small>INC.</small></span></a>
+<button class="menu" id="menu" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+<nav id="nav" aria-label="Main">
+<a href="#track">Track</a><a href="#services">Services</a><a href="#containers">Containers</a><a href="#vehicles">Buy a vehicle</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+<a class="btn or" href="#quote" style="min-height:44px">Book a container</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="top">
+<div class="wrap">
+<div class="copy">
+<span class="kick" style="color:var(--or2)">Container shipping platform</span>
+<h1>Container shipping to Nigeria, made simple.</h1>
+<p class="lead">Book a container, ship your vehicles, auto parts and goods, and follow every stage online, from the port of loading to delivery. One team handles all of it.</p>
+<div class="chips"><span class="chip"><i></i>20ft, 40ft and High Cube</span><span class="chip"><i></i>Vehicles, parts and goods</span><span class="chip"><i></i>Online tracking</span></div>
+<div class="row" style="flex:0 0 auto;max-width:460px">
+<a class="btn or" href="#quote" style="flex:0 1 auto">Get a free quote</a>
+<a class="btn ghost" href="#track" style="flex:0 1 auto">Track a shipment</a>
+</div>
+</div>
+
+<form class="card quote" id="quote" novalidate>
+<h3>Get a container quote</h3>
+<div>
+<label id="sz-l">Container size</label>
+<div class="pills" role="group" aria-labelledby="sz-l">
+<button type="button" class="pill" data-size="20ft Standard" aria-pressed="false">20ft</button>
+<button type="button" class="pill" data-size="40ft Standard" aria-pressed="true">40ft</button>
+<button type="button" class="pill" data-size="40ft High Cube" aria-pressed="false">40ft High Cube</button>
+</div>
+</div>
+<div><label for="q-cargo">What are you shipping?</label>
+<select id="q-cargo"><option>Vehicles</option><option>Auto parts</option><option>General goods</option><option>Machinery</option><option>Buy a vehicle + ship it</option></select></div>
+<div class="row">
+<div><label for="q-from">From</label><input id="q-from" placeholder="e.g. Houston, USA" autocomplete="off"></div>
+<div><label for="q-to">To</label><input id="q-to" placeholder="e.g. Lagos, Nigeria" autocomplete="off"></div>
+</div>
+<div class="row">
+<div><label for="q-name">Your name</label><input id="q-name" autocomplete="name"></div>
+<div><label for="q-phone">Phone / WhatsApp</label><input id="q-phone" type="tel" autocomplete="tel"></div>
+</div>
+<button class="btn nv" type="submit">Send my request</button>
+<div id="q-out" role="status"></div>
+</form>
+</div>
+<svg class="port" viewBox="0 0 1440 260" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><g fill="#1C3A72"><rect x="120" y="18" width="16" height="190"/><rect x="232" y="18" width="16" height="190"/><rect x="88" y="10" width="560" height="18"/><rect x="120" y="96" width="128" height="12"/><path d="M88 28 L60 60 H88Z"/></g><g class="hook"><rect x="418" y="28" width="4" height="62" fill="#1C3A72"/><rect x="396" y="88" width="48" height="24" rx="2" fill="#FF7A1A"/></g><g class="ship"><rect x="470" y="128" width="44" height="24" rx="2" fill="#3D8BFF"/><line x1="479" y1="132" x2="479" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="488" y1="132" x2="488" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="497" y1="132" x2="497" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="506" y1="132" x2="506" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="517" y="128" width="44" height="24" rx="2" fill="#0B5FFF"/><line x1="526" y1="132" x2="526" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="535" y1="132" x2="535" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="544" y1="132" x2="544" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="553" y1="132" x2="553" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="564" y="128" width="44" height="24" rx="2" fill="#E8EEF7"/><line x1="573" y1="132" x2="573" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="582" y1="132" x2="582" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="591" y1="132" x2="591" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="600" y1="132" x2="600" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="611" y="128" width="44" height="24" rx="2" fill="#16346E"/><line x1="620" y1="132" x2="620" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="629" y1="132" x2="629" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="638" y1="132" x2="638" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="647" y1="132" x2="647" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="658" y="128" width="44" height="24" rx="2" fill="#FF7A1A"/><line x1="667" y1="132" x2="667" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="676" y1="132" x2="676" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="685" y1="132" x2="685" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="694" y1="132" x2="694" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="705" y="128" width="44" height="24" rx="2" fill="#FF7A1A"/><line x1="714" y1="132" x2="714" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="723" y1="132" x2="723" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="732" y1="132" x2="732" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="741" y1="132" x2="741" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="752" y="128" width="44" height="24" rx="2" fill="#0B5FFF"/><line x1="761" y1="132" x2="761" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="770" y1="132" x2="770" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="779" y1="132" x2="779" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="788" y1="132" x2="788" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="799" y="128" width="44" height="24" rx="2" fill="#FF7A1A"/><line x1="808" y1="132" x2="808" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="817" y1="132" x2="817" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="826" y1="132" x2="826" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="835" y1="132" x2="835" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="846" y="128" width="44" height="24" rx="2" fill="#FF7A1A"/><line x1="855" y1="132" x2="855" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="864" y1="132" x2="864" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="873" y1="132" x2="873" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="882" y1="132" x2="882" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="893" y="128" width="44" height="24" rx="2" fill="#3D8BFF"/><line x1="902" y1="132" x2="902" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="911" y1="132" x2="911" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="920" y1="132" x2="920" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="929" y1="132" x2="929" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="940" y="128" width="44" height="24" rx="2" fill="#FF7A1A"/><line x1="949" y1="132" x2="949" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="958" y1="132" x2="958" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="967" y1="132" x2="967" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="976" y1="132" x2="976" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="987" y="128" width="44" height="24" rx="2" fill="#FF7A1A"/><line x1="996" y1="132" x2="996" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="1005" y1="132" x2="1005" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="1014" y1="132" x2="1014" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="1023" y1="132" x2="1023" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="1034" y="128" width="44" height="24" rx="2" fill="#FF7A1A"/><line x1="1043" y1="132" x2="1043" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="1052" y1="132" x2="1052" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="1061" y1="132" x2="1061" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="1070" y1="132" x2="1070" y2="148" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="470" y="101" width="44" height="24" rx="2" fill="#0B5FFF"/><line x1="479" y1="105" x2="479" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="488" y1="105" x2="488" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="497" y1="105" x2="497" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="506" y1="105" x2="506" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="517" y="101" width="44" height="24" rx="2" fill="#FF7A1A"/><line x1="526" y1="105" x2="526" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="535" y1="105" x2="535" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="544" y1="105" x2="544" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="553" y1="105" x2="553" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="564" y="101" width="44" height="24" rx="2" fill="#FF7A1A"/><line x1="573" y1="105" x2="573" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="582" y1="105" x2="582" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="591" y1="105" x2="591" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="600" y1="105" x2="600" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="611" y="101" width="44" height="24" rx="2" fill="#E8EEF7"/><line x1="620" y1="105" x2="620" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="629" y1="105" x2="629" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="638" y1="105" x2="638" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="647" y1="105" x2="647" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="658" y="101" width="44" height="24" rx="2" fill="#E8EEF7"/><line x1="667" y1="105" x2="667" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="676" y1="105" x2="676" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="685" y1="105" x2="685" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="694" y1="105" x2="694" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="705" y="101" width="44" height="24" rx="2" fill="#FF7A1A"/><line x1="714" y1="105" x2="714" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="723" y1="105" x2="723" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="732" y1="105" x2="732" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="741" y1="105" x2="741" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="752" y="101" width="44" height="24" rx="2" fill="#0B5FFF"/><line x1="761" y1="105" x2="761" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="770" y1="105" x2="770" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="779" y1="105" x2="779" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="788" y1="105" x2="788" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="799" y="101" width="44" height="24" rx="2" fill="#FF7A1A"/><line x1="808" y1="105" x2="808" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="817" y1="105" x2="817" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="826" y1="105" x2="826" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="835" y1="105" x2="835" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="846" y="101" width="44" height="24" rx="2" fill="#FF7A1A"/><line x1="855" y1="105" x2="855" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="864" y1="105" x2="864" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="873" y1="105" x2="873" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="882" y1="105" x2="882" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="893" y="101" width="44" height="24" rx="2" fill="#E8EEF7"/><line x1="902" y1="105" x2="902" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="911" y1="105" x2="911" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="920" y1="105" x2="920" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="929" y1="105" x2="929" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="940" y="101" width="44" height="24" rx="2" fill="#FF7A1A"/><line x1="949" y1="105" x2="949" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="958" y1="105" x2="958" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="967" y1="105" x2="967" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="976" y1="105" x2="976" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="987" y="101" width="44" height="24" rx="2" fill="#0B5FFF"/><line x1="996" y1="105" x2="996" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="1005" y1="105" x2="1005" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="1014" y1="105" x2="1014" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="1023" y1="105" x2="1023" y2="121" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="470" y="74" width="44" height="24" rx="2" fill="#FF7A1A"/><line x1="479" y1="78" x2="479" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="488" y1="78" x2="488" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="497" y1="78" x2="497" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="506" y1="78" x2="506" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="517" y="74" width="44" height="24" rx="2" fill="#FF7A1A"/><line x1="526" y1="78" x2="526" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="535" y1="78" x2="535" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="544" y1="78" x2="544" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="553" y1="78" x2="553" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="564" y="74" width="44" height="24" rx="2" fill="#0B5FFF"/><line x1="573" y1="78" x2="573" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="582" y1="78" x2="582" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="591" y1="78" x2="591" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="600" y1="78" x2="600" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="658" y="74" width="44" height="24" rx="2" fill="#16346E"/><line x1="667" y1="78" x2="667" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="676" y1="78" x2="676" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="685" y1="78" x2="685" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="694" y1="78" x2="694" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="705" y="74" width="44" height="24" rx="2" fill="#16346E"/><line x1="714" y1="78" x2="714" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="723" y1="78" x2="723" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="732" y1="78" x2="732" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="741" y1="78" x2="741" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="752" y="74" width="44" height="24" rx="2" fill="#FF7A1A"/><line x1="761" y1="78" x2="761" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="770" y1="78" x2="770" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="779" y1="78" x2="779" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="788" y1="78" x2="788" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="799" y="74" width="44" height="24" rx="2" fill="#FF7A1A"/><line x1="808" y1="78" x2="808" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="817" y1="78" x2="817" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="826" y1="78" x2="826" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="835" y1="78" x2="835" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="846" y="74" width="44" height="24" rx="2" fill="#FF7A1A"/><line x1="855" y1="78" x2="855" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="864" y1="78" x2="864" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="873" y1="78" x2="873" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><line x1="882" y1="78" x2="882" y2="94" stroke="#000" stroke-opacity=".16" stroke-width="2"/><rect x="1110" y="62" width="64" height="92" rx="4" fill="#DCE6F5"/><rect x="1118" y="74" width="48" height="10" rx="2" fill="#0A1F44"/><rect x="1118" y="92" width="48" height="6" rx="2" fill="#9CB3D8"/><rect x="1130" y="40" width="16" height="24" fill="#DCE6F5"/><rect x="1130" y="40" width="16" height="6" fill="#FF7A1A"/><path d="M430 152 H1230 L1196 214 H462 Z" fill="#05122B"/><path d="M436 164 H1226 L1221 174 H441 Z" fill="#FF7A1A"/><text x="1040" y="202" font-family="Exo 2, sans-serif" font-style="italic" font-weight="900" font-size="24" fill="#FFFFFF">DMP</text></g><rect x="0" y="204" width="1440" height="56" fill="#0B2A5C"/><path class="w1" d="M-120 214 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0" fill="none" stroke="#3D8BFF" stroke-width="4" opacity=".9"/><path class="w2" d="M-120 236 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0 q 30 -10 60 0 t 60 0" fill="none" stroke="#3D8BFF" stroke-width="4" opacity=".45"/></svg>
+</section>
+
+<section class="trackband" id="track">
+<div class="wrap card trackcard">
+<form class="trackform" id="t-form">
+<div class="t"><h3 style="font-size:24px">Track your shipment</h3><p class="note">Enter the DMP tracking number from your booking.</p></div>
+<label for="t-num" style="position:absolute;left:-9999px">Tracking number</label>
+<input id="t-num" placeholder="DMP-000000" autocomplete="off" spellcheck="false">
+<button class="btn or" type="submit">Track</button>
+</form>
+<div class="result" id="t-res" aria-live="polite"></div>
+</div>
+</section>
+
+<section class="band" id="services" style="background:var(--mist);padding-top:72px">
+<div class="wrap">
+<div class="head reveal"><span class="kick">What we do</span><h2>Everything that goes in the container</h2><p>Four services under one roof, so your car, your parts and your goods travel together with one team looking after them.</p></div>
+<div class="svcs">
+<article class="svc main reveal">
+<div class="ico"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0A1F44" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="1"/><path d="M6 9v6M10 9v6M14 9v6M18 9v6"/></svg></div>
+<h3>Container Shipping</h3>
+<p>Full containers for vehicles, auto parts, household goods, business stock and machinery, shipped to Nigeria and other countries.</p>
+<ul><li>20ft, 40ft and 40ft High Cube containers</li><li>Pickup and loading arranged for you</li><li>Online tracking from booking to arrival</li><li>Status updates at every stage</li></ul>
+<div class="art"><svg width="253" height="400" viewBox="-70.7 -253.3 253.2 399.5" role="img" aria-label="DMP on stacked shipping containers"><polygon points="-70.7,40.8 88.3,132.6 88.3,49.3 -70.7,-42.5" fill="#EEF2F8" /><polygon points="159.0,91.8 88.3,132.6 88.3,49.3 159.0,8.5" fill="#C9D3E3" /><polygon points="0.0,-83.3 159.0,8.5 88.3,49.3 -70.7,-42.5" fill="#FFFFFF" /><line x1="-60.7" y1="39.1" x2="-60.7" y2="-29.3" stroke="#B3C0D6" stroke-width="2.2" stroke-linecap="butt"/><line x1="-50.8" y1="44.8" x2="-50.8" y2="-23.5" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="butt"/><line x1="-40.9" y1="50.5" x2="-40.9" y2="-17.8" stroke="#B3C0D6" stroke-width="2.2" stroke-linecap="butt"/><line x1="-30.9" y1="56.3" x2="-30.9" y2="-12.1" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="butt"/><line x1="-21.0" y1="62.0" x2="-21.0" y2="-6.3" stroke="#B3C0D6" stroke-width="2.2" stroke-linecap="butt"/><line x1="-11.0" y1="67.7" x2="-11.0" y2="-0.6" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="butt"/><line x1="-1.1" y1="73.5" x2="-1.1" y2="5.1" stroke="#B3C0D6" stroke-width="2.2" stroke-linecap="butt"/><line x1="8.8" y1="79.2" x2="8.8" y2="10.9" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="butt"/><line x1="18.8" y1="85.0" x2="18.8" y2="16.6" stroke="#B3C0D6" stroke-width="2.2" stroke-linecap="butt"/><line x1="28.7" y1="90.7" x2="28.7" y2="22.4" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="butt"/><line x1="38.6" y1="96.4" x2="38.6" y2="28.1" stroke="#B3C0D6" stroke-width="2.2" stroke-linecap="butt"/><line x1="48.6" y1="102.2" x2="48.6" y2="33.8" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="butt"/><line x1="58.5" y1="107.9" x2="58.5" y2="39.6" stroke="#B3C0D6" stroke-width="2.2" stroke-linecap="butt"/><line x1="68.5" y1="113.6" x2="68.5" y2="45.3" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="butt"/><line x1="78.4" y1="119.4" x2="78.4" y2="51.0" stroke="#B3C0D6" stroke-width="2.2" stroke-linecap="butt"/><polygon points="-70.7,-36.4 88.3,55.4 88.3,49.3 -70.7,-42.5" fill="#B3C0D6" /><polygon points="-70.7,40.8 88.3,132.6 88.3,126.5 -70.7,34.7" fill="#B3C0D6" /><line x1="123.7" y1="107.1" x2="123.7" y2="34.0" stroke="#B3C0D6" stroke-width="2.5" stroke-linecap="butt"/><line x1="143.5" y1="92.3" x2="143.5" y2="26.0" stroke="#FFFFFF" stroke-width="2" stroke-linecap="butt"/><line x1="132.1" y1="98.8" x2="132.1" y2="32.5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="butt"/><line x1="115.2" y1="108.6" x2="115.2" y2="42.3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="butt"/><line x1="103.9" y1="115.1" x2="103.9" y2="48.8" stroke="#FFFFFF" stroke-width="2" stroke-linecap="butt"/><polygon points="-70.7,40.8 -64.2,44.5 -64.2,37.1 -70.7,33.3" fill="#0A1F44" /><polygon points="-70.7,-35.0 -64.2,-31.3 -64.2,-38.8 -70.7,-42.5" fill="#0A1F44" /><polygon points="81.9,128.9 88.3,132.6 88.3,125.1 81.9,121.4" fill="#0A1F44" /><polygon points="81.9,53.0 88.3,56.8 88.3,49.3 81.9,45.6" fill="#0A1F44" /><polygon points="159.0,91.8 152.5,95.5 152.5,88.1 159.0,84.3" fill="#0A1F44" /><polygon points="159.0,16.0 152.5,19.7 152.5,12.2 159.0,8.5" fill="#0A1F44" /><text transform="matrix(0.8660 0.5 0 1 8.8 45.0)" x="0" y="27.0" text-anchor="middle" font-family="Exo 2, sans-serif" font-style="italic" font-weight="900" font-size="75.0" fill="#0A1F44">P</text><polygon points="-47.1,-30.6 111.9,61.2 111.9,-22.1 -47.1,-113.9" fill="#FF7A1A" /><polygon points="182.6,20.4 111.9,61.2 111.9,-22.1 182.6,-62.9" fill="#D95F0A" /><polygon points="23.6,-154.7 182.6,-62.9 111.9,-22.1 -47.1,-113.9" fill="#FFA35C" /><line x1="-37.2" y1="-32.3" x2="-37.2" y2="-100.7" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="-27.2" y1="-26.6" x2="-27.2" y2="-94.9" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="-17.3" y1="-20.9" x2="-17.3" y2="-89.2" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="-7.4" y1="-15.1" x2="-7.4" y2="-83.5" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="2.6" y1="-9.4" x2="2.6" y2="-77.7" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="12.5" y1="-3.7" x2="12.5" y2="-72.0" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="22.5" y1="2.1" x2="22.5" y2="-66.3" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="32.4" y1="7.8" x2="32.4" y2="-60.5" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="42.3" y1="13.6" x2="42.3" y2="-54.8" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="52.3" y1="19.3" x2="52.3" y2="-49.0" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="62.2" y1="25.0" x2="62.2" y2="-43.3" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="72.1" y1="30.8" x2="72.1" y2="-37.6" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="82.1" y1="36.5" x2="82.1" y2="-31.8" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="92.0" y1="42.2" x2="92.0" y2="-26.1" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="102.0" y1="48.0" x2="102.0" y2="-20.4" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><polygon points="-47.1,-107.8 111.9,-16.0 111.9,-22.1 -47.1,-113.9" fill="#C9560A" /><polygon points="-47.1,-30.6 111.9,61.2 111.9,55.1 -47.1,-36.7" fill="#C9560A" /><line x1="147.2" y1="35.7" x2="147.2" y2="-37.4" stroke="#C9560A" stroke-width="2.5" stroke-linecap="butt"/><line x1="167.0" y1="20.9" x2="167.0" y2="-45.4" stroke="#FF9447" stroke-width="2" stroke-linecap="butt"/><line x1="155.7" y1="27.4" x2="155.7" y2="-38.9" stroke="#FF9447" stroke-width="2" stroke-linecap="butt"/><line x1="138.7" y1="37.2" x2="138.7" y2="-29.1" stroke="#FF9447" stroke-width="2" stroke-linecap="butt"/><line x1="127.4" y1="43.7" x2="127.4" y2="-22.6" stroke="#FF9447" stroke-width="2" stroke-linecap="butt"/><polygon points="-47.1,-30.6 -40.6,-26.9 -40.6,-34.3 -47.1,-38.1" fill="#0A1F44" /><polygon points="-47.1,-106.4 -40.6,-102.7 -40.6,-110.2 -47.1,-113.9" fill="#0A1F44" /><polygon points="105.4,57.5 111.9,61.2 111.9,53.7 105.4,50.0" fill="#0A1F44" /><polygon points="105.4,-18.4 111.9,-14.6 111.9,-22.1 105.4,-25.8" fill="#0A1F44" /><polygon points="182.6,20.4 176.1,24.1 176.1,16.7 182.6,12.9" fill="#0A1F44" /><polygon points="182.6,-55.4 176.1,-51.7 176.1,-59.2 182.6,-62.9" fill="#0A1F44" /><text transform="matrix(0.8660 0.5 0 1 32.4 -26.3)" x="0" y="27.0" text-anchor="middle" font-family="Exo 2, sans-serif" font-style="italic" font-weight="900" font-size="75.0" fill="#0A1F44">M</text><polygon points="-63.3,-125.0 95.7,-33.1 95.7,-116.4 -63.3,-208.2" fill="#0B5FFF" /><polygon points="166.4,-73.9 95.7,-33.1 95.7,-116.4 166.4,-157.2" fill="#0848C2" /><polygon points="7.4,-249.1 166.4,-157.2 95.7,-116.4 -63.3,-208.2" fill="#4F8DFF" /><line x1="-53.4" y1="-126.7" x2="-53.4" y2="-195.0" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="-43.4" y1="-121.0" x2="-43.4" y2="-189.3" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><line x1="-33.5" y1="-115.2" x2="-33.5" y2="-183.6" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="-23.6" y1="-109.5" x2="-23.6" y2="-177.8" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><line x1="-13.6" y1="-103.7" x2="-13.6" y2="-172.1" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="-3.7" y1="-98.0" x2="-3.7" y2="-166.3" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><line x1="6.3" y1="-92.3" x2="6.3" y2="-160.6" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="16.2" y1="-86.5" x2="16.2" y2="-154.9" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><line x1="26.1" y1="-80.8" x2="26.1" y2="-149.1" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="36.1" y1="-75.1" x2="36.1" y2="-143.4" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><line x1="46.0" y1="-69.3" x2="46.0" y2="-137.7" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="55.9" y1="-63.6" x2="55.9" y2="-131.9" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><line x1="65.9" y1="-57.8" x2="65.9" y2="-126.2" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="75.8" y1="-52.1" x2="75.8" y2="-120.4" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><line x1="85.8" y1="-46.4" x2="85.8" y2="-114.7" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><polygon points="-63.3,-202.1 95.7,-110.3 95.7,-116.4 -63.3,-208.2" fill="#0743B5" /><polygon points="-63.3,-125.0 95.7,-33.1 95.7,-39.3 -63.3,-131.1" fill="#0743B5" /><line x1="131.0" y1="-58.7" x2="131.0" y2="-131.8" stroke="#0743B5" stroke-width="2.5" stroke-linecap="butt"/><line x1="150.8" y1="-73.5" x2="150.8" y2="-139.8" stroke="#2F78FF" stroke-width="2" stroke-linecap="butt"/><line x1="139.5" y1="-66.9" x2="139.5" y2="-133.2" stroke="#2F78FF" stroke-width="2" stroke-linecap="butt"/><line x1="122.5" y1="-57.2" x2="122.5" y2="-123.5" stroke="#2F78FF" stroke-width="2" stroke-linecap="butt"/><line x1="111.2" y1="-50.6" x2="111.2" y2="-116.9" stroke="#2F78FF" stroke-width="2" stroke-linecap="butt"/><polygon points="-63.3,-125.0 -56.8,-121.2 -56.8,-128.7 -63.3,-132.4" fill="#0A1F44" /><polygon points="-63.3,-200.8 -56.8,-197.0 -56.8,-204.5 -63.3,-208.2" fill="#0A1F44" /><polygon points="89.2,-36.9 95.7,-33.1 95.7,-40.6 89.2,-44.4" fill="#0A1F44" /><polygon points="89.2,-112.7 95.7,-109.0 95.7,-116.4 89.2,-120.2" fill="#0A1F44" /><polygon points="166.4,-73.9 159.9,-70.2 159.9,-77.7 166.4,-81.4" fill="#0A1F44" /><polygon points="166.4,-149.8 159.9,-146.0 159.9,-153.5 166.4,-157.2" fill="#0A1F44" /><text transform="matrix(0.8660 0.5 0 1 16.2 -120.7)" x="0" y="27.0" text-anchor="middle" font-family="Exo 2, sans-serif" font-style="italic" font-weight="900" font-size="75.0" fill="#fff">D</text></svg></div>
+</article>
+<article class="svc reveal">
+<div class="ico"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17H3v-5l2-5h11l3 5h2v5h-2"/><circle cx="7.5" cy="17" r="2"/><circle cx="16.5" cy="17" r="2"/><path d="M9.5 17h5M5 12h14"/></svg></div>
+<h3>Vehicle Shipping</h3><p>Cars, SUVs and trucks, loaded and secured inside a container.</p>
+<ul><li>One car or several in one box</li><li>Add parts in the same container</li></ul>
+</article>
+<article class="svc reveal">
+<div class="ico"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16l-1 12H5zM9 7a3 3 0 0 1 6 0"/></svg></div>
+<h3>Vehicle Sales</h3><p>Tell us the car you want. We find it, buy it and ship it to you.</p>
+<ul><li>Your make, model and budget</li><li>Bought and shipped by one team</li></ul>
+</article>
+<article class="svc reveal">
+<div class="ico"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M2 12h3M19 12h3M4.9 19.1L7 17M17 7l2.1-2.1"/></svg></div>
+<h3>Auto Parts</h3><p>Engines, body parts and accessories, sourced and shipped for you.</p>
+<ul><li>Send us the part name or photo</li><li>Ships with your cargo or alone</li></ul>
+</article>
+<article class="svc reveal">
+<div class="ico"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 1 0-18 0M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+<h3>Nigeria and beyond</h3><p>Nigeria is our main route, and we ship to other countries too. Ask us about yours.</p>
+<ul><li>Tell us where from and where to</li><li>We quote the full journey</li></ul>
+</article>
+</div>
+</div>
+</section>
+
+<section class="band" id="containers">
+<div class="wrap">
+<div class="head reveal"><span class="kick">Container finder</span><h2>Which container do you need?</h2><p>Answer two quick questions and we'll point you to the right size. Not sure? Pick the closest one and we'll confirm with your quote.</p></div>
+<div class="finder">
+<div class="card ask reveal" style="box-shadow:0 10px 40px rgba(10,31,68,.08);border:1px solid var(--line)">
+<div><label id="cars-l">How many vehicles?</label>
+<div class="stepper" role="group" aria-labelledby="cars-l"><button type="button" id="c-minus" aria-label="Fewer vehicles">−</button><output id="cars" aria-live="polite">1</output><button type="button" id="c-plus" aria-label="More vehicles">+</button></div></div>
+<div><label id="big-l">Any large SUVs, vans or trucks?</label>
+<div class="seg" role="group" aria-labelledby="big-l"><button type="button" class="pill" data-big="no" aria-pressed="true">No</button><button type="button" class="pill" data-big="yes" aria-pressed="false">Yes</button></div></div>
+<div><label id="goods-l">Goods or parts as well?</label>
+<div class="seg" role="group" aria-labelledby="goods-l"><button type="button" class="pill" data-goods="0" aria-pressed="false">None</button><button type="button" class="pill" data-goods="1" aria-pressed="true">Some</button><button type="button" class="pill" data-goods="2" aria-pressed="false">A lot</button></div></div>
+<div class="verdict" id="verdict" aria-live="polite"></div>
+</div>
+<div class="sizes">
+<article class="size" data-id="20ft Standard">
+<div class="pic"><span class="badge">Best fit</span><svg viewBox="-51.9 -64.4 115.2 130.6" width="115" height="131" aria-hidden="true"><polygon points="-49.9,28.8 11.4,64.2 11.4,1.8 -49.9,-33.6" fill="#0B5FFF" /><polygon points="61.3,35.4 11.4,64.2 11.4,1.8 61.3,-27.0" fill="#0848C2" /><polygon points="0.0,-62.4 61.3,-27.0 11.4,1.8 -49.9,-33.6" fill="#4F8DFF" /><line x1="-43.1" y1="27.5" x2="-43.1" y2="-24.4" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="-36.3" y1="31.4" x2="-36.3" y2="-20.5" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><line x1="-29.4" y1="35.3" x2="-29.4" y2="-16.5" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="-22.6" y1="39.3" x2="-22.6" y2="-12.6" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><line x1="-15.8" y1="43.2" x2="-15.8" y2="-8.7" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="-9.0" y1="47.1" x2="-9.0" y2="-4.7" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><line x1="-2.2" y1="51.1" x2="-2.2" y2="-0.8" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="4.6" y1="55.0" x2="4.6" y2="3.1" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><polygon points="-49.9,-29.3 11.4,6.1 11.4,1.8 -49.9,-33.6" fill="#0743B5" /><polygon points="-49.9,28.8 11.4,64.2 11.4,59.9 -49.9,24.5" fill="#0743B5" /><line x1="36.4" y1="46.2" x2="36.4" y2="-9.0" stroke="#0743B5" stroke-width="2.5" stroke-linecap="butt"/><line x1="50.3" y1="35.7" x2="50.3" y2="-14.7" stroke="#2F78FF" stroke-width="2" stroke-linecap="butt"/><line x1="42.4" y1="40.3" x2="42.4" y2="-10.1" stroke="#2F78FF" stroke-width="2" stroke-linecap="butt"/><line x1="30.4" y1="47.3" x2="30.4" y2="-3.1" stroke="#2F78FF" stroke-width="2" stroke-linecap="butt"/><line x1="22.4" y1="51.9" x2="22.4" y2="1.5" stroke="#2F78FF" stroke-width="2" stroke-linecap="butt"/><polygon points="-49.9,28.8 -45.3,31.4 -45.3,26.2 -49.9,23.5" fill="#0A1F44" /><polygon points="-49.9,-28.3 -45.3,-25.7 -45.3,-31.0 -49.9,-33.6" fill="#0A1F44" /><polygon points="6.9,61.6 11.4,64.2 11.4,58.9 6.9,56.3" fill="#0A1F44" /><polygon points="6.9,4.4 11.4,7.1 11.4,1.8 6.9,-0.8" fill="#0A1F44" /><polygon points="61.3,35.4 56.7,38.0 56.7,32.8 61.3,30.1" fill="#0A1F44" /><polygon points="61.3,-21.7 56.7,-19.1 56.7,-24.4 61.3,-27.0" fill="#0A1F44" /></svg></div>
+<div class="in"><h3>20ft Standard</h3><p class="note">For 1–2 cars, or a mixed load of parts and goods.</p>
+<dl><dt>Inside length</dt><dd>about 5.9 m</dd><dt>Inside height</dt><dd>about 2.39 m</dd><dt>Space</dt><dd>about 33 m³</dd></dl>
+<button type="button" class="btn line" data-use="20ft Standard">Use this container</button></div>
+</article>
+<article class="size" data-id="40ft Standard">
+<div class="pic"><span class="badge">Best fit</span><svg viewBox="-51.9 -64.4 176.5 166.0" width="177" height="166" aria-hidden="true"><polygon points="-49.9,28.8 72.7,99.6 72.7,37.2 -49.9,-33.6" fill="#FF7A1A" /><polygon points="122.6,70.8 72.7,99.6 72.7,37.2 122.6,8.4" fill="#D95F0A" /><polygon points="0.0,-62.4 122.6,8.4 72.7,37.2 -49.9,-33.6" fill="#FFA35C" /><line x1="-43.1" y1="27.5" x2="-43.1" y2="-24.4" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="-36.3" y1="31.4" x2="-36.3" y2="-20.5" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="-29.4" y1="35.3" x2="-29.4" y2="-16.5" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="-22.6" y1="39.3" x2="-22.6" y2="-12.6" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="-15.8" y1="43.2" x2="-15.8" y2="-8.7" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="-9.0" y1="47.1" x2="-9.0" y2="-4.7" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="-2.2" y1="51.1" x2="-2.2" y2="-0.8" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="4.6" y1="55.0" x2="4.6" y2="3.1" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="11.4" y1="58.9" x2="11.4" y2="7.1" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="18.2" y1="62.9" x2="18.2" y2="11.0" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="25.1" y1="66.8" x2="25.1" y2="14.9" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="31.9" y1="70.7" x2="31.9" y2="18.9" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="38.7" y1="74.7" x2="38.7" y2="22.8" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="45.5" y1="78.6" x2="45.5" y2="26.7" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="52.3" y1="82.5" x2="52.3" y2="30.7" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="59.1" y1="86.5" x2="59.1" y2="34.6" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="65.9" y1="90.4" x2="65.9" y2="38.5" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><polygon points="-49.9,-29.3 72.7,41.5 72.7,37.2 -49.9,-33.6" fill="#C9560A" /><polygon points="-49.9,28.8 72.7,99.6 72.7,95.3 -49.9,24.5" fill="#C9560A" /><line x1="97.7" y1="81.6" x2="97.7" y2="26.4" stroke="#C9560A" stroke-width="2.5" stroke-linecap="butt"/><line x1="111.7" y1="71.1" x2="111.7" y2="20.7" stroke="#FF9447" stroke-width="2" stroke-linecap="butt"/><line x1="103.7" y1="75.7" x2="103.7" y2="25.3" stroke="#FF9447" stroke-width="2" stroke-linecap="butt"/><line x1="91.7" y1="82.7" x2="91.7" y2="32.3" stroke="#FF9447" stroke-width="2" stroke-linecap="butt"/><line x1="83.7" y1="87.3" x2="83.7" y2="36.9" stroke="#FF9447" stroke-width="2" stroke-linecap="butt"/><polygon points="-49.9,28.8 -45.3,31.4 -45.3,26.2 -49.9,23.5" fill="#0A1F44" /><polygon points="-49.9,-28.3 -45.3,-25.7 -45.3,-31.0 -49.9,-33.6" fill="#0A1F44" /><polygon points="68.2,97.0 72.7,99.6 72.7,94.3 68.2,91.7" fill="#0A1F44" /><polygon points="68.2,39.8 72.7,42.5 72.7,37.2 68.2,34.6" fill="#0A1F44" /><polygon points="122.6,70.8 118.1,73.4 118.1,68.2 122.6,65.5" fill="#0A1F44" /><polygon points="122.6,13.7 118.1,16.3 118.1,11.0 122.6,8.4" fill="#0A1F44" /><text transform="matrix(0.8660 0.5 0 1 11.4 33.0)" y="11.2" text-anchor="middle" font-family="Exo 2, sans-serif" font-style="italic" font-weight="900" font-size="31.2" fill="#0A1F44">DMP</text></svg></div>
+<div class="in"><h3>40ft Standard</h3><p class="note">For 3–4 cars, or a large load of goods and parts.</p>
+<dl><dt>Inside length</dt><dd>about 12.0 m</dd><dt>Inside height</dt><dd>about 2.39 m</dd><dt>Space</dt><dd>about 67 m³</dd></dl>
+<button type="button" class="btn line" data-use="40ft Standard">Use this container</button></div>
+</article>
+<article class="size" data-id="40ft High Cube">
+<div class="pic"><span class="badge">Best fit</span><svg viewBox="-51.9 -72.8 176.5 174.4" width="177" height="174" aria-hidden="true"><polygon points="-49.9,28.8 72.7,99.6 72.7,28.8 -49.9,-42.0" fill="#16346E" /><polygon points="122.6,70.8 72.7,99.6 72.7,28.8 122.6,0.0" fill="#0D2552" /><polygon points="0.0,-70.8 122.6,0.0 72.7,28.8 -49.9,-42.0" fill="#2A4C8F" /><line x1="-43.1" y1="27.5" x2="-43.1" y2="-32.8" stroke="#0A1F44" stroke-width="2.2" stroke-linecap="butt"/><line x1="-36.3" y1="31.4" x2="-36.3" y2="-28.9" stroke="#22427F" stroke-width="2.2" stroke-linecap="butt"/><line x1="-29.4" y1="35.3" x2="-29.4" y2="-24.9" stroke="#0A1F44" stroke-width="2.2" stroke-linecap="butt"/><line x1="-22.6" y1="39.3" x2="-22.6" y2="-21.0" stroke="#22427F" stroke-width="2.2" stroke-linecap="butt"/><line x1="-15.8" y1="43.2" x2="-15.8" y2="-17.1" stroke="#0A1F44" stroke-width="2.2" stroke-linecap="butt"/><line x1="-9.0" y1="47.1" x2="-9.0" y2="-13.1" stroke="#22427F" stroke-width="2.2" stroke-linecap="butt"/><line x1="-2.2" y1="51.1" x2="-2.2" y2="-9.2" stroke="#0A1F44" stroke-width="2.2" stroke-linecap="butt"/><line x1="4.6" y1="55.0" x2="4.6" y2="-5.3" stroke="#22427F" stroke-width="2.2" stroke-linecap="butt"/><line x1="11.4" y1="58.9" x2="11.4" y2="-1.3" stroke="#0A1F44" stroke-width="2.2" stroke-linecap="butt"/><line x1="18.2" y1="62.9" x2="18.2" y2="2.6" stroke="#22427F" stroke-width="2.2" stroke-linecap="butt"/><line x1="25.1" y1="66.8" x2="25.1" y2="6.5" stroke="#0A1F44" stroke-width="2.2" stroke-linecap="butt"/><line x1="31.9" y1="70.7" x2="31.9" y2="10.5" stroke="#22427F" stroke-width="2.2" stroke-linecap="butt"/><line x1="38.7" y1="74.7" x2="38.7" y2="14.4" stroke="#0A1F44" stroke-width="2.2" stroke-linecap="butt"/><line x1="45.5" y1="78.6" x2="45.5" y2="18.3" stroke="#22427F" stroke-width="2.2" stroke-linecap="butt"/><line x1="52.3" y1="82.5" x2="52.3" y2="22.3" stroke="#0A1F44" stroke-width="2.2" stroke-linecap="butt"/><line x1="59.1" y1="86.5" x2="59.1" y2="26.2" stroke="#22427F" stroke-width="2.2" stroke-linecap="butt"/><line x1="65.9" y1="90.4" x2="65.9" y2="30.1" stroke="#0A1F44" stroke-width="2.2" stroke-linecap="butt"/><polygon points="-49.9,-37.7 72.7,33.1 72.7,28.8 -49.9,-42.0" fill="#0A1F44" /><polygon points="-49.9,28.8 72.7,99.6 72.7,95.3 -49.9,24.5" fill="#0A1F44" /><line x1="97.7" y1="81.6" x2="97.7" y2="18.0" stroke="#0A1F44" stroke-width="2.5" stroke-linecap="butt"/><line x1="111.7" y1="71.1" x2="111.7" y2="12.3" stroke="#22427F" stroke-width="2" stroke-linecap="butt"/><line x1="103.7" y1="75.7" x2="103.7" y2="16.9" stroke="#22427F" stroke-width="2" stroke-linecap="butt"/><line x1="91.7" y1="82.7" x2="91.7" y2="23.9" stroke="#22427F" stroke-width="2" stroke-linecap="butt"/><line x1="83.7" y1="87.3" x2="83.7" y2="28.5" stroke="#22427F" stroke-width="2" stroke-linecap="butt"/><polygon points="-49.9,28.8 -45.3,31.4 -45.3,26.2 -49.9,23.5" fill="#0A1F44" /><polygon points="-49.9,-36.7 -45.3,-34.1 -45.3,-39.4 -49.9,-42.0" fill="#0A1F44" /><polygon points="68.2,97.0 72.7,99.6 72.7,94.3 68.2,91.7" fill="#0A1F44" /><polygon points="68.2,31.4 72.7,34.1 72.7,28.8 68.2,26.2" fill="#0A1F44" /><polygon points="122.6,70.8 118.1,73.4 118.1,68.2 122.6,65.5" fill="#0A1F44" /><polygon points="122.6,5.3 118.1,7.9 118.1,2.6 122.6,0.0" fill="#0A1F44" /><text transform="matrix(0.8660 0.5 0 1 11.4 28.8)" y="12.7" text-anchor="middle" font-family="Exo 2, sans-serif" font-style="italic" font-weight="900" font-size="35.4" fill="#fff">DMP</text></svg></div>
+<div class="in"><h3>40ft High Cube</h3><p class="note">Extra height for SUVs, vans, bulky goods and machinery.</p>
+<dl><dt>Inside length</dt><dd>about 12.0 m</dd><dt>Inside height</dt><dd>about 2.69 m</dd><dt>Space</dt><dd>about 76 m³</dd></dl>
+<button type="button" class="btn line" data-use="40ft High Cube">Use this container</button></div>
+</article>
+</div>
+</div>
+<p class="note" style="margin-top:18px">How many cars fit depends on their size and how they're loaded. We confirm the exact plan with your quote.</p>
+</div>
+</section>
+
+<section class="band" id="vehicles" style="background:var(--mist)">
+<div class="wrap cars">
+<div class="reveal">
+<span class="kick">Vehicle sales</span>
+<h2 style="margin-top:14px">Buy your next car through us. We'll ship it home.</h2>
+<ol class="flow">
+<li><div><b>Tell us what you want</b><span>Make, model, year and your budget.</span></div></li>
+<li><div><b>We find and buy it</b><span>We source the vehicle and share the details with you before buying.</span></div></li>
+<li><div><b>We load and ship it</b><span>Your car goes into a container, with parts or goods if you like.</span></div></li>
+<li><div><b>You receive it</b><span>Track it online until it arrives.</span></div></li>
+</ol>
+<a class="btn nv" href="#quote" data-cargo="Buy a vehicle + ship it">Ask for a vehicle</a>
+</div>
+<div class="carart reveal" aria-hidden="true">
+<svg viewBox="0 0 560 360">
+<rect x="0" y="300" width="560" height="60" fill="#05122B"/>
+<rect x="30" y="300" width="500" height="6" fill="#FF7A1A"/>
+<g>
+<rect x="40" y="70" width="480" height="230" rx="6" fill="#16346E"/>
+<g stroke="#0A1F44" stroke-width="6"><line x1="70" y1="92" x2="70" y2="280"/><line x1="92" y1="92" x2="92" y2="280"/><line x1="114" y1="92" x2="114" y2="280"/><line x1="136" y1="92" x2="136" y2="280"/><line x1="158" y1="92" x2="158" y2="280"/><line x1="180" y1="92" x2="180" y2="280"/><line x1="202" y1="92" x2="202" y2="280"/><line x1="224" y1="92" x2="224" y2="280"/><line x1="246" y1="92" x2="246" y2="280"/><line x1="268" y1="92" x2="268" y2="280"/><line x1="290" y1="92" x2="290" y2="280"/><line x1="312" y1="92" x2="312" y2="280"/><line x1="334" y1="92" x2="334" y2="280"/><line x1="356" y1="92" x2="356" y2="280"/><line x1="378" y1="92" x2="378" y2="280"/><line x1="400" y1="92" x2="400" y2="280"/><line x1="422" y1="92" x2="422" y2="280"/><line x1="444" y1="92" x2="444" y2="280"/><line x1="466" y1="92" x2="466" y2="280"/><line x1="488" y1="92" x2="488" y2="280"/></g>
+<rect x="40" y="70" width="480" height="18" fill="#0A1F44"/><rect x="40" y="282" width="480" height="18" fill="#0A1F44"/>
+<rect x="40" y="70" width="22" height="22" fill="#FF7A1A"/><rect x="498" y="70" width="22" height="22" fill="#FF7A1A"/><rect x="40" y="278" width="22" height="22" fill="#FF7A1A"/><rect x="498" y="278" width="22" height="22" fill="#FF7A1A"/>
+</g>
+<g transform="translate(95 150)">
+<path d="M20 100 L20 70 Q22 54 40 50 L110 44 L150 10 Q160 2 175 2 L285 2 Q300 2 312 12 L350 44 L395 52 Q415 56 418 76 L418 100 Z" fill="#FF7A1A"/>
+<path d="M160 18 L172 12 L230 12 L230 44 L132 44 Z" fill="#9CC3FF"/><path d="M242 12 L285 12 Q295 12 302 18 L330 44 L242 44 Z" fill="#9CC3FF"/>
+<rect x="232" y="12" width="8" height="34" fill="#D95F0A"/>
+<rect x="20" y="78" width="398" height="8" fill="#D95F0A"/>
+<rect x="392" y="62" width="22" height="10" rx="3" fill="#FFE2B8"/>
+<circle cx="100" cy="104" r="34" fill="#0A1F44"/><circle cx="100" cy="104" r="16" fill="#C9D6EE"/>
+<circle cx="340" cy="104" r="34" fill="#0A1F44"/><circle cx="340" cy="104" r="16" fill="#C9D6EE"/>
+</g>
+<text x="280" y="50" text-anchor="middle" font-family="Exo 2, sans-serif" font-style="italic" font-weight="900" font-size="30" fill="#FFFFFF">Bought. Loaded. Shipped.</text>
+</svg>
+</div>
+</div>
+</section>
+
+<section class="band dark" id="how">
+<div class="wrap">
+<div class="head reveal"><span class="kick">How it works</span><h2>From booking to delivery</h2></div>
+<div class="grid4">
+<div class="step reveal"><b>1</b><h3>Book your container</h3><p>Pick a size and tell us what you're shipping and where.</p></div>
+<div class="step reveal"><b>2</b><h3>We load it</h3><p>Your vehicles, parts or goods are collected and loaded.</p></div>
+<div class="step reveal"><b>3</b><h3>Ship and track</h3><p>The container sails. Follow it with your DMP tracking number.</p></div>
+<div class="step reveal"><b>4</b><h3>Receive your cargo</h3><p>It arrives at the destination port, ready for pickup or delivery.</p></div>
+</div>
+</div>
+</section>
+
+<section class="band">
+<div class="wrap">
+<div class="head reveal"><span class="kick">Why DMP</span><h2>Shipping you can follow, from people you can reach</h2></div>
+<div class="grid4">
+<div class="why reveal"><div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div><div><h3>One team, start to finish</h3><p>Buying, loading, shipping and tracking all sit with us, so you have one contact.</p></div></div>
+<div class="why reveal"><div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4zM8 9h8M8 13h8M8 17h5"/></svg></div><div><h3>Clear quotes</h3><p>You see the price and timeline before anything moves.</p></div></div>
+<div class="why reveal"><div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><h3>Track it yourself</h3><p>Check your shipment's stage any time with your tracking number.</p></div></div>
+<div class="why reveal"><div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg></div><div><h3>Updates on WhatsApp</h3><p>Questions answered where you already chat.</p></div></div>
+</div>
+</div>
+</section>
+
+<section class="band" id="faq" style="background:var(--mist)">
+<div class="wrap">
+<div class="head reveal"><span class="kick">Questions</span><h2>Frequently asked</h2></div>
+<div class="faq">
+<details><summary>How long does container shipping to Nigeria take?</summary><p>It depends on where your cargo is coming from and the sailing schedule. We give you an estimated arrival date with your quote, and you can follow every stage with your tracking number.</p></details>
+<details><summary>Can I ship a car and other goods in the same container?</summary><p>Yes. Many customers ship a vehicle together with auto parts or personal goods. Tell us everything you want to ship and we'll plan the load.</p></details>
+<details><summary>How do I track my shipment?</summary><p>When your booking is confirmed you get a DMP tracking number, like DMP-123456. Enter it in the tracking box on this page to see where your container is.</p></details>
+<details><summary>Which container size should I choose?</summary><p>Use the container finder above for a quick guide. As a rule, a 20ft suits 1–2 cars, a 40ft suits 3–4, and a 40ft High Cube is best for tall vehicles and bulky items. We'll confirm the right size with your quote.</p></details>
+<details><summary>Can you buy a vehicle for me?</summary><p>Yes. Tell us the make, model, year and budget. We find the vehicle, share the details with you, buy it and ship it.</p></details>
+<details><summary>What documents do I need?</summary><p>It depends on what you're shipping and where. When you request a quote, we'll tell you exactly which documents your shipment needs.</p></details>
+</div>
+</div>
+</section>
+
+<section class="band">
+<div class="wrap cta reveal">
+<div><h2>Ready to ship your container?</h2><p>Get a free quote today. No obligation.</p></div>
+<a class="btn nv" href="#quote">Get a free quote</a>
+</div>
+</section>
+</main>
+
+<footer id="contact">
+<div class="wrap">
+<div class="fcols">
+<div><a class="brand" href="#top" aria-label="DMP Global Logistics home"><svg width="149" height="235" viewBox="-41.6 -149.0 149.0 235.0" role="img" aria-label="DMP on stacked shipping containers"><polygon points="-41.6,24.0 52.0,78.0 52.0,29.0 -41.6,-25.0" fill="#EEF2F8" /><polygon points="93.5,54.0 52.0,78.0 52.0,29.0 93.5,5.0" fill="#C9D3E3" /><polygon points="0.0,-49.0 93.5,5.0 52.0,29.0 -41.6,-25.0" fill="#FFFFFF" /><line x1="-35.7" y1="23.0" x2="-35.7" y2="-17.2" stroke="#B3C0D6" stroke-width="2.2" stroke-linecap="butt"/><line x1="-29.9" y1="26.4" x2="-29.9" y2="-13.9" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="butt"/><line x1="-24.0" y1="29.7" x2="-24.0" y2="-10.5" stroke="#B3C0D6" stroke-width="2.2" stroke-linecap="butt"/><line x1="-18.2" y1="33.1" x2="-18.2" y2="-7.1" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="butt"/><line x1="-12.3" y1="36.5" x2="-12.3" y2="-3.7" stroke="#B3C0D6" stroke-width="2.2" stroke-linecap="butt"/><line x1="-6.5" y1="39.9" x2="-6.5" y2="-0.3" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="butt"/><line x1="-0.6" y1="43.2" x2="-0.6" y2="3.0" stroke="#B3C0D6" stroke-width="2.2" stroke-linecap="butt"/><line x1="5.2" y1="46.6" x2="5.2" y2="6.4" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="butt"/><line x1="11.0" y1="50.0" x2="11.0" y2="9.8" stroke="#B3C0D6" stroke-width="2.2" stroke-linecap="butt"/><line x1="16.9" y1="53.4" x2="16.9" y2="13.1" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="butt"/><line x1="22.7" y1="56.7" x2="22.7" y2="16.5" stroke="#B3C0D6" stroke-width="2.2" stroke-linecap="butt"/><line x1="28.6" y1="60.1" x2="28.6" y2="19.9" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="butt"/><line x1="34.4" y1="63.5" x2="34.4" y2="23.3" stroke="#B3C0D6" stroke-width="2.2" stroke-linecap="butt"/><line x1="40.3" y1="66.8" x2="40.3" y2="26.6" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="butt"/><line x1="46.1" y1="70.2" x2="46.1" y2="30.0" stroke="#B3C0D6" stroke-width="2.2" stroke-linecap="butt"/><polygon points="-41.6,-21.4 52.0,32.6 52.0,29.0 -41.6,-25.0" fill="#B3C0D6" /><polygon points="-41.6,24.0 52.0,78.0 52.0,74.4 -41.6,20.4" fill="#B3C0D6" /><line x1="72.7" y1="63.0" x2="72.7" y2="20.0" stroke="#B3C0D6" stroke-width="2.5" stroke-linecap="butt"/><line x1="84.4" y1="54.3" x2="84.4" y2="15.3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="butt"/><line x1="77.7" y1="58.1" x2="77.7" y2="19.1" stroke="#FFFFFF" stroke-width="2" stroke-linecap="butt"/><line x1="67.8" y1="63.9" x2="67.8" y2="24.9" stroke="#FFFFFF" stroke-width="2" stroke-linecap="butt"/><line x1="61.1" y1="67.7" x2="61.1" y2="28.7" stroke="#FFFFFF" stroke-width="2" stroke-linecap="butt"/><polygon points="-41.6,24.0 -37.8,26.2 -37.8,21.8 -41.6,19.6" fill="#0A1F44" /><polygon points="-41.6,-20.6 -37.8,-18.4 -37.8,-22.8 -41.6,-25.0" fill="#0A1F44" /><polygon points="48.2,75.8 52.0,78.0 52.0,73.6 48.2,71.4" fill="#0A1F44" /><polygon points="48.2,31.2 52.0,33.4 52.0,29.0 48.2,26.8" fill="#0A1F44" /><polygon points="93.5,54.0 89.7,56.2 89.7,51.8 93.5,49.6" fill="#0A1F44" /><polygon points="93.5,9.4 89.7,11.6 89.7,7.2 93.5,5.0" fill="#0A1F44" /><text transform="matrix(0.8660 0.5 0 1 5.2 26.5)" x="0" y="15.9" text-anchor="middle" font-family="Exo 2, sans-serif" font-style="italic" font-weight="900" font-size="44.1" fill="#0A1F44">P</text><polygon points="-27.7,-18.0 65.8,36.0 65.8,-13.0 -27.7,-67.0" fill="#FF7A1A" /><polygon points="107.4,12.0 65.8,36.0 65.8,-13.0 107.4,-37.0" fill="#D95F0A" /><polygon points="13.9,-91.0 107.4,-37.0 65.8,-13.0 -27.7,-67.0" fill="#FFA35C" /><line x1="-21.9" y1="-19.0" x2="-21.9" y2="-59.2" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="-16.0" y1="-15.7" x2="-16.0" y2="-55.9" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="-10.2" y1="-12.3" x2="-10.2" y2="-52.5" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="-4.3" y1="-8.9" x2="-4.3" y2="-49.1" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="1.5" y1="-5.5" x2="1.5" y2="-45.7" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="7.4" y1="-2.2" x2="7.4" y2="-42.4" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="13.2" y1="1.2" x2="13.2" y2="-39.0" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="19.1" y1="4.6" x2="19.1" y2="-35.6" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="24.9" y1="8.0" x2="24.9" y2="-32.2" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="30.7" y1="11.3" x2="30.7" y2="-28.9" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="36.6" y1="14.7" x2="36.6" y2="-25.5" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="42.4" y1="18.1" x2="42.4" y2="-22.1" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="48.3" y1="21.5" x2="48.3" y2="-18.7" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><line x1="54.1" y1="24.8" x2="54.1" y2="-15.4" stroke="#FF9447" stroke-width="2.2" stroke-linecap="butt"/><line x1="60.0" y1="28.2" x2="60.0" y2="-12.0" stroke="#C9560A" stroke-width="2.2" stroke-linecap="butt"/><polygon points="-27.7,-63.4 65.8,-9.4 65.8,-13.0 -27.7,-67.0" fill="#C9560A" /><polygon points="-27.7,-18.0 65.8,36.0 65.8,32.4 -27.7,-21.6" fill="#C9560A" /><line x1="86.6" y1="21.0" x2="86.6" y2="-22.0" stroke="#C9560A" stroke-width="2.5" stroke-linecap="butt"/><line x1="98.2" y1="12.3" x2="98.2" y2="-26.7" stroke="#FF9447" stroke-width="2" stroke-linecap="butt"/><line x1="91.6" y1="16.1" x2="91.6" y2="-22.9" stroke="#FF9447" stroke-width="2" stroke-linecap="butt"/><line x1="81.6" y1="21.9" x2="81.6" y2="-17.1" stroke="#FF9447" stroke-width="2" stroke-linecap="butt"/><line x1="75.0" y1="25.7" x2="75.0" y2="-13.3" stroke="#FF9447" stroke-width="2" stroke-linecap="butt"/><polygon points="-27.7,-18.0 -23.9,-15.8 -23.9,-20.2 -27.7,-22.4" fill="#0A1F44" /><polygon points="-27.7,-62.6 -23.9,-60.4 -23.9,-64.8 -27.7,-67.0" fill="#0A1F44" /><polygon points="62.0,33.8 65.8,36.0 65.8,31.6 62.0,29.4" fill="#0A1F44" /><polygon points="62.0,-10.8 65.8,-8.6 65.8,-13.0 62.0,-15.2" fill="#0A1F44" /><polygon points="107.4,12.0 103.6,14.2 103.6,9.8 107.4,7.6" fill="#0A1F44" /><polygon points="107.4,-32.6 103.6,-30.4 103.6,-34.8 107.4,-37.0" fill="#0A1F44" /><text transform="matrix(0.8660 0.5 0 1 19.1 -15.5)" x="0" y="15.9" text-anchor="middle" font-family="Exo 2, sans-serif" font-style="italic" font-weight="900" font-size="44.1" fill="#0A1F44">M</text><polygon points="-37.2,-73.5 56.3,-19.5 56.3,-68.5 -37.2,-122.5" fill="#0B5FFF" /><polygon points="97.9,-43.5 56.3,-19.5 56.3,-68.5 97.9,-92.5" fill="#0848C2" /><polygon points="4.3,-146.5 97.9,-92.5 56.3,-68.5 -37.2,-122.5" fill="#4F8DFF" /><line x1="-31.4" y1="-74.5" x2="-31.4" y2="-114.7" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="-25.5" y1="-71.1" x2="-25.5" y2="-111.4" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><line x1="-19.7" y1="-67.8" x2="-19.7" y2="-108.0" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="-13.9" y1="-64.4" x2="-13.9" y2="-104.6" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><line x1="-8.0" y1="-61.0" x2="-8.0" y2="-101.2" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="-2.2" y1="-57.6" x2="-2.2" y2="-97.9" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><line x1="3.7" y1="-54.3" x2="3.7" y2="-94.5" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="9.5" y1="-50.9" x2="9.5" y2="-91.1" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><line x1="15.4" y1="-47.5" x2="15.4" y2="-87.7" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="21.2" y1="-44.1" x2="21.2" y2="-84.4" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><line x1="27.1" y1="-40.8" x2="27.1" y2="-81.0" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="32.9" y1="-37.4" x2="32.9" y2="-77.6" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><line x1="38.8" y1="-34.0" x2="38.8" y2="-74.2" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><line x1="44.6" y1="-30.6" x2="44.6" y2="-70.9" stroke="#2F78FF" stroke-width="2.2" stroke-linecap="butt"/><line x1="50.4" y1="-27.3" x2="50.4" y2="-67.5" stroke="#0743B5" stroke-width="2.2" stroke-linecap="butt"/><polygon points="-37.2,-118.9 56.3,-64.9 56.3,-68.5 -37.2,-122.5" fill="#0743B5" /><polygon points="-37.2,-73.5 56.3,-19.5 56.3,-23.1 -37.2,-77.1" fill="#0743B5" /><line x1="77.1" y1="-34.5" x2="77.1" y2="-77.5" stroke="#0743B5" stroke-width="2.5" stroke-linecap="butt"/><line x1="88.7" y1="-43.2" x2="88.7" y2="-82.2" stroke="#2F78FF" stroke-width="2" stroke-linecap="butt"/><line x1="82.1" y1="-39.4" x2="82.1" y2="-78.4" stroke="#2F78FF" stroke-width="2" stroke-linecap="butt"/><line x1="72.1" y1="-33.6" x2="72.1" y2="-72.6" stroke="#2F78FF" stroke-width="2" stroke-linecap="butt"/><line x1="65.4" y1="-29.8" x2="65.4" y2="-68.8" stroke="#2F78FF" stroke-width="2" stroke-linecap="butt"/><polygon points="-37.2,-73.5 -33.4,-71.3 -33.4,-75.7 -37.2,-77.9" fill="#0A1F44" /><polygon points="-37.2,-118.1 -33.4,-115.9 -33.4,-120.3 -37.2,-122.5" fill="#0A1F44" /><polygon points="52.5,-21.7 56.3,-19.5 56.3,-23.9 52.5,-26.1" fill="#0A1F44" /><polygon points="52.5,-66.3 56.3,-64.1 56.3,-68.5 52.5,-70.7" fill="#0A1F44" /><polygon points="97.9,-43.5 94.1,-41.3 94.1,-45.7 97.9,-47.9" fill="#0A1F44" /><polygon points="97.9,-88.1 94.1,-85.9 94.1,-90.3 97.9,-92.5" fill="#0A1F44" /><text transform="matrix(0.8660 0.5 0 1 9.5 -71.0)" x="0" y="15.9" text-anchor="middle" font-family="Exo 2, sans-serif" font-style="italic" font-weight="900" font-size="44.1" fill="#fff">D</text></svg><span><b>GLOBAL<br>LOGISTICS</b><small>INC.</small></span></a>
+<p style="color:var(--pale);max-width:320px;margin-top:6px">Container shipping, vehicle shipping, vehicle sales and auto parts, to Nigeria and other countries.</p></div>
+<div><h4>Services</h4><a href="#services">Container shipping</a><a href="#services">Vehicle shipping</a><a href="#vehicles">Vehicle sales</a><a href="#services">Auto parts</a></div>
+<div><h4>Platform</h4><a href="#quote">Get a quote</a><a href="#track">Track a shipment</a><a href="#containers">Container finder</a><a href="/admin">Staff login</a></div>
+<div><h4>Contact us</h4><span>Phone: <span data-c="phone"></span></span><span>WhatsApp: <span data-c="wa"></span></span><span>Email: <span data-c="email"></span></span><span>Office: <span data-c="addr"></span></span></div>
+</div>
+<div class="legal"><span>© <span id="yr">2026</span> DMP Global Logistics Inc. All rights reserved.</span><a href="#top" style="color:#A9B8D4">Back to top ↑</a></div>
+</div>
+</footer>
+
+<a class="wa" id="wa" href="#quote" aria-label="Chat with DMP on WhatsApp"><svg width="30" height="30" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.6-.1 1.1z"/></svg></a>
+
+<script>
+{
+/* ===== Business details: fill these in ===== */
+const BIZ = { wa: "", phone: "", email: "", addr: "" }; // wa = full international number, digits only, e.g. "2348012345678"
+
+const STAGES = ["Booked","Loaded at origin","Departed port","On the water","Arrived at port","Ready for pickup"];
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt = (d) => { if (!d) return "To be confirmed"; const t = new Date(d); return isNaN(t) ? String(d) : t.toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" }); };
+
+$("#yr").textContent = new Date().getFullYear();
+$$("[data-c]").forEach((el) => { const v = BIZ[el.dataset.c]; el.textContent = v ? (el.dataset.c === "wa" ? "+" + v : v) : "Coming soon"; });
+if (BIZ.wa) { $("#wa").href = "https://wa.me/" + BIZ.wa; $("#wa").target = "_blank"; $("#wa").rel = "noopener"; }
+
+/* menu */
+const nav = $("#nav"), menu = $("#menu");
+menu.addEventListener("click", () => { const o = nav.classList.toggle("open"); menu.setAttribute("aria-expanded", o); });
+$$("#nav a").forEach((a) => a.addEventListener("click", () => { nav.classList.remove("open"); menu.setAttribute("aria-expanded", "false"); }));
+
+/* quote */
+let size = "40ft Standard";
+function setSize(s) { size = s; $$("#quote .pill").forEach((p) => p.setAttribute("aria-pressed", p.dataset.size === s ? "true" : "false")); }
+$$("#quote .pill").forEach((b) => b.addEventListener("click", () => setSize(b.dataset.size)));
+$$("[data-cargo]").forEach((a) => a.addEventListener("click", () => { $("#q-cargo").value = a.dataset.cargo; }));
+$("#quote").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const f = { cargo: $("#q-cargo").value, from: $("#q-from").value.trim(), to: $("#q-to").value.trim(), name: $("#q-name").value.trim(), phone: $("#q-phone").value.trim() };
+  const out = $("#q-out");
+  if (!f.from || !f.to || !f.name || !f.phone) { out.className = "warn"; out.textContent = "Please fill in from, to, your name and phone number."; return; }
+  const msg = "Hello DMP Global Logistics, I'd like a quote.\nContainer: " + size + "\nShipping: " + f.cargo + "\nFrom: " + f.from + "\nTo: " + f.to + "\nName: " + f.name + "\nPhone: " + f.phone;
+  out.className = "ok"; out.textContent = "";
+  if (BIZ.wa) {
+    const a = document.createElement("a");
+    a.href = "https://wa.me/" + BIZ.wa + "?text=" + encodeURIComponent(msg); a.target = "_blank"; a.rel = "noopener";
+    a.className = "btn or"; a.style.marginTop = "10px"; a.textContent = "Send on WhatsApp";
+    out.append("Your request is ready. Tap below to send it to us on WhatsApp.", document.createElement("br"), a);
+  } else {
+    const b = document.createElement("button"); b.type = "button"; b.className = "btn or"; b.style.marginTop = "10px"; b.textContent = "Copy my request";
+    b.addEventListener("click", async () => { try { await navigator.clipboard.writeText(msg); b.textContent = "Copied"; } catch (err) { b.textContent = "Select the text above to copy it"; } });
+    const pre = document.createElement("div"); pre.style.cssText = "white-space:pre-line;margin:8px 0"; pre.textContent = msg;
+    out.append("Your request is ready. Copy it and send it to us:", pre, b);
+  }
+});
+
+/* container finder */
+let cars = 1, big = "no", goods = 1;
+function decide() {
+  let s, why;
+  const tall = big === "yes";
+  if (cars === 0) { s = goods >= 2 ? "40ft Standard" : "20ft Standard"; why = goods >= 2 ? "a large load of goods" : "goods and parts"; }
+  else if (cars <= 2 && goods < 2 && !tall) { s = "20ft Standard"; why = cars + (cars === 1 ? " car" : " cars") + (goods ? " plus some goods" : ""); }
+  else if (tall) { s = "40ft High Cube"; why = "taller vehicles need the extra height"; }
+  else { s = "40ft Standard"; why = cars + (cars === 1 ? " car" : " cars") + (goods ? " with goods" : ""); }
+  if (cars > 4) why = "more than 4 vehicles may need two containers, so we'll plan it with you";
+  $$(".size").forEach((c) => c.classList.toggle("pick", c.dataset.id === s));
+  $("#verdict").innerHTML = "We suggest a <b>" + esc(s) + "</b> for " + esc(why) + ".";
+}
+$("#c-minus").addEventListener("click", () => { cars = Math.max(0, cars - 1); $("#cars").textContent = cars; decide(); });
+$("#c-plus").addEventListener("click", () => { cars = Math.min(8, cars + 1); $("#cars").textContent = cars; decide(); });
+$$("[data-big]").forEach((b) => b.addEventListener("click", () => { big = b.dataset.big; $$("[data-big]").forEach((x) => x.setAttribute("aria-pressed", x === b ? "true" : "false")); decide(); }));
+$$("[data-goods]").forEach((b) => b.addEventListener("click", () => { goods = Number(b.dataset.goods); $$("[data-goods]").forEach((x) => x.setAttribute("aria-pressed", x === b ? "true" : "false")); decide(); }));
+$$("[data-use]").forEach((b) => b.addEventListener("click", () => { setSize(b.dataset.use); $("#quote").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); setTimeout(() => $("#q-from").focus({ preventScroll: true }), 500); }));
+decide();
+
+/* tracking */
+const boat = '<svg width="56" height="32" viewBox="0 0 54 30" aria-hidden="true"><rect x="12" y="4" width="10" height="8" fill="#FF7A1A"/><rect x="23" y="4" width="10" height="8" fill="#0B5FFF"/><rect x="34" y="4" width="8" height="8" fill="#3D8BFF"/><path d="M2 13h50l-6 12H8z" fill="#0A1F44"/></svg>';
+function show(s) {
+  const st = Math.max(0, Math.min(STAGES.length - 1, Number(s.stage) || 0));
+  const pct = st / (STAGES.length - 1) * 100;
+  const ev = Array.isArray(s.events) ? s.events.slice().reverse() : [];
+  const r = $("#t-res"); r.style.display = "block";
+  r.innerHTML = '<div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;align-items:baseline;margin-bottom:14px"><h3>' + esc(s.number) + '</h3><span class="note">' + esc([s.size, s.cargo, s.container].filter(Boolean).join(" · ")) + '</span></div>' +
+    '<div class="route"><div>' + esc(s.origin) + '<span>Origin</span></div><div style="text-align:right">' + esc(s.destination) + '<span>ETA ' + esc(fmt(s.eta)) + '</span></div></div>' +
+    '<div class="lane"><div class="rail"></div><div class="done" style="width:0"></div><div class="boat" style="left:0">' + boat + '</div></div>' +
+    '<div class="steps">' + STAGES.map((n, i) => '<div class="' + (i <= st ? "on" : "") + '">' + esc(n) + '</div>').join("") + '</div>' +
+    '<p style="margin-top:18px;font-weight:700;font-size:17px">Current status: <span style="color:var(--blue)">' + esc(STAGES[st]) + '</span></p>' +
+    (ev.length ? '<ul class="events">' + ev.map((e) => '<li><time>' + esc(fmt(e.at)) + '</time><span>' + esc(e.text) + '</span></li>').join("") + '</ul>' : "");
+  requestAnimationFrame(() => requestAnimationFrame(() => { $(".done", r).style.width = pct + "%"; $(".boat", r).style.left = pct + "%"; }));
+}
+$("#t-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const id = $("#t-num").value.trim(); const r = $("#t-res"); r.style.display = "block";
+  if (!id) { r.innerHTML = '<div class="warn">Please enter your tracking number.</div>'; return; }
+  r.innerHTML = '<p class="note">Looking up ' + esc(id.toUpperCase()) + '…</p>';
+  const ctl = new AbortController(); const t = setTimeout(() => ctl.abort(), 10000);
+  try {
+    const res = await fetch("/api/track?id=" + encodeURIComponent(id), { signal: ctl.signal });
+    clearTimeout(t);
+    if (res.status === 404) { r.innerHTML = '<div class="warn">We couldn\'t find ' + esc(id.toUpperCase()) + '. Check the number on your booking, or contact us.</div>'; return; }
+    const data = await res.json();
+    if (!res.ok) { r.innerHTML = '<div class="warn">' + esc(data.error || "Tracking isn't available right now.") + '</div>'; return; }
+    show(data);
+  } catch (err) { clearTimeout(t); r.innerHTML = '<div class="warn">Tracking isn\'t available right now. Please try again shortly.</div>'; }
+});
+
+/* reveal on scroll */
+if ("IntersectionObserver" in window) {
+  const io = new IntersectionObserver((es) => es.forEach((x) => { if (x.isIntersecting) { x.target.classList.add("in"); io.unobserve(x.target); } }), { threshold: .12 });
+  $$(".reveal").forEach((el) => io.observe(el));
+} else $$(".reveal").forEach((el) => el.classList.add("in"));
+}
+</script>
+</body>
+</html>
